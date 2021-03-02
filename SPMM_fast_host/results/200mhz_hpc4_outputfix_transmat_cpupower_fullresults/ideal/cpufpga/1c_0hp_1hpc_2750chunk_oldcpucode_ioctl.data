@@ -1,0 +1,2 @@
+Run[#]	CPU Cores[#]	FPGA HP Accelerators[#]	FPGA HPC Accelerators[#]	Chunk Size[#]	IOCTL Enabled	Execution Time[ms]	Rows on CPU[#]	Rows on FPGA[#]	Scheduler Type	CPU Power[W]	FPGA Power[W]	CPU Energy[J]	FPGA Energy[J]
+1	1	0	1	2750	Y	1349.22	3166	26791	Dynamic	0	0	0	0

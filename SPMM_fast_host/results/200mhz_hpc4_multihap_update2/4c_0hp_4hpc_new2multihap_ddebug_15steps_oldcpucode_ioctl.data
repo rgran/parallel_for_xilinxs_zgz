@@ -1,0 +1,182 @@
+LCM: 1600
+ALING CHUNK SIZE: 4
+SPMM Simulation: matrices/mixtank_new.mtx, 4, 4
+Reading Matrix Input File
+Reading header
+Reading data
+Setting number of elements: 1995041
+Reading numbers from file
+Allocating buffers for host data
+nRows->29957 nElements->1995041
+Number of Rows: 29957
+NNZ: 1995041
+BEGIN CALIBRATE:
+STEP: 0
+Running Pipeline: 4 4 
+** FPGA thread: 3
+** FPGA thread: 2
+** FPGA thread: 1
+** FPGA thread: 0
+*** Checking FPGA[4] step: 0 chunk sizes: 0 , 0 , 4
+                     thr: 0 , 0 , 0.1318
+               decay thr: 0 , 0 , 0.129164
+FPGA[4] FILLED OK
+*** Checking FPGA[2] step: 2 chunk sizes: 4 , 0 , 16
+                     thr: 0.1318 , 0 , 0.508124
+               decay thr: 0.1318 , 0 , 0.497962
+*** Checking FPGA[1] step: 3 chunk sizes: 0 , 16 , 32
+                     thr: 0 , 0.508124 , 0.9805
+               decay thr: 0 , 0.497962 , 0.96089
+*** Checking FPGA[4] step: 4 chunk sizes: 16 , 32 , 64
+                     thr: 0.508124 , 0.9805 , 1.86092
+               decay thr: 0.508124 , 0.96089 , 1.8237
+*** Checking FPGA[2] step: 5 chunk sizes: 32 , 64 , 128
+                     thr: 0.9805 , 1.86092 , 3.75122
+               decay thr: 0.9805 , 1.8237 , 3.67619
+*** Checking FPGA[1] step: 6 chunk sizes: 64 , 128 , 256
+                     thr: 1.86092 , 3.75122 , 6.90036
+               decay thr: 1.86092 , 3.67619 , 6.76235
+*** Checking FPGA[3] step: 7 chunk sizes: 128 , 256 , 512
+                     thr: 3.75122 , 6.90036 , 11.4618
+               decay thr: 3.75122 , 6.76235 , 11.2326
+*** Checking FPGA[4] step: 8 chunk sizes: 256 , 512 , 1024
+                     thr: 6.90036 , 11.4618 , 15.9998
+               decay thr: 6.90036 , 11.2326 , 15.6798
+STEP: 1
+Running Pipeline: 4 4 
+*** Checking FPGA[2] step: 9 chunk sizes: 512 , 1024 , 2048
+                     thr: 11.4618 , 15.9998 , 21.9365
+               decay thr: 11.4618 , 15.6798 , 21.4977
+STEP: 2
+Running Pipeline: 4 4 
+*** Checking FPGA[4] step: 12 chunk sizes: 0 , 0 , 16384
+                     thr: 0 , 0 , 20.7654
+               decay thr: 0 , 0 , 20.3501
+STEP: 3
+Running Pipeline: 4 4 
+*** Checking FPGA[4] step: 14 chunk sizes: 16384 , 0 , 29957
+                     thr: 20.7654 , 0 , 25.2069
+               decay thr: 20.7654 , 0 , 24.7027
+******** Stable phase ********* np: 4 mea: 14
+STEP: 4
+Running Pipeline: 4 4 
+Calculate Chunk FPGA[4] chunk: 30156 step: 14 chunk sizes: 16384 , 0 , 29956
+                     thr: 20.7654 , 0 , 25.382
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 25.5532
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 13296 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 20004 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 22492 end: 29957
+STEP: 5
+Running Pipeline: 4 4 
+Calculate Chunk FPGA[4] chunk: 30156 step: 14 chunk sizes: 16384 , 0 , 29956
+                     thr: 20.7654 , 0 , 25.382
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 0.91524
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 6384 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 15554 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 19371 end: 29957
+STEP: 6
+Running Pipeline: 4 4 
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 34.8276
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 9425 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 12671 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 16010 end: 29957
+STEP: 7
+Running Pipeline: 4 4 
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 6.36317
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 5969 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 11939 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 21267 end: 29957
+STEP: 8
+Running Pipeline: 4 4 
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 15.7295
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 8020 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 13708 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 18471 end: 29957
+STEP: 9
+Running Pipeline: 4 4 
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 22.7108
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 6301 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 14765 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 18504 end: 29957
+STEP: 10
+Running Pipeline: 4 4 
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 11.4074
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 6322 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 11542 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 16171 end: 29957
+STEP: 11
+Running Pipeline: 4 4 
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 39.8902
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 5129 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 10266 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 17343 end: 29957
+STEP: 12
+Running Pipeline: 4 4 
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 16.6052
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 6542 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 11954 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 17146 end: 29957
+STEP: 13
+Running Pipeline: 4 4 
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 16.9982
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 5226 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 11610 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 16325 end: 29957
+STEP: 14
+Running Pipeline: 4 4 
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 12.9181
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 5786 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 10555 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 15370 end: 29957
+BEGIN FINALRUN
+starting time energy
+Running Pipeline: 4 4 
+  stopConditionModeOn Chunk FPGA= 30156 Begin = 0, End = 29957 fg 28.1778
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case - Active FPGAs= 3 > Begin: 4815 end: 29957
+***** Concord Case - Active FPGAs= 2 > Begin: 17760 end: 29957
+***** Concord Case - Active FPGAs= 1 > Begin: 19249 end: 29957
++--------------------+
+| POWER MEASUREMENTS |
++--------------------+
+** Processing System Domain rails ********** 
+    VCCPSINTFP =    3.781 J     VCCPSINTLP =    0.644 J       VCCPSAUX =    0.644 J 
+      VCCPSPLL =    0.644 J       MGTRAVCC =    0.193 J       MGTRAVTT =    0.077 J 
+VCCO_PSDDR_504 =    0.794 J         VCCOPS =    0.794 J        VCCOPS3 =    0.794 J 
+   VCCPSDDRPLL =    0.129 J 
+
+** Programmable Logic Domain rails ***********
+        VCCINT =    3.373 J        VCCBRAM =    0.129 J 
+        VCCAUX =    0.967 J         VCC1V2 =    0.129 J         VCC3V3 =    0.322 J 
+      VADJ_FMC =    0.322 J        MGTAVCC =    0.112 J        MGTAVTT =    0.112 J 
+
+
+Processing System Domain ENERGY = 8.496335 J
+Programmable Logic Domain ENERGY = 5.465660 J
+TOTAL ENERGY = 13.961996 J
+
+Processing System Domain POWER = 3.282751 W
+Programmable Logic Domain POWER = 2.111781 W
+TOTAL POWER = 5.394532 W
+
+CLOCK_REALTIME = 2.588175 sec
+# of samples: 49
+sample every (real) = 0.052820 sec
+sample every: 0.050000 sec
+TIEMPO TOTAL: 2585.36
+Final GPU Chunk: 7539
+Total n. rows : 29957
+Total n. rows on CPU: 16962
+Total n. rows on FPGA: 12995
+Actual percentage of work offloaded to the FPGA: 43 

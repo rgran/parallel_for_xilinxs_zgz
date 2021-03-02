@@ -1,0 +1,66 @@
+LCM: 1600
+ALING CHUNK SIZE: 4
+SPMM Simulation: matrices/mixtank_new.mtx, 4, 4
+Reading Matrix Input File
+Reading header
+Reading data
+Setting number of elements: 1995041
+Reading numbers from file
+Allocating buffers for host data
+nRows->29957 nElements->1995041
+Number of Rows: 29957
+NNZ: 1995041
+BEGIN CALIBRATE:
+STEP: 0
+** FPGA thread: 3
+** FPGA thread: 2
+** FPGA thread: 1
+** FPGA thread: 0
+FPGA[4] FILLED OK
+FPGA[3] FILLED OK
+FPGA[2] FILLED OK
+FPGA[1] FILLED OK
+FPGA[4] FILLED OK
+FPGA[3] FILLED OK
+FPGA[2] FILLED OK
+FPGA[1] FILLED OK
+FPGA[4] FILLED OK
+STEP: 1
+FPGA[3] FILLED OK
+STEP: 2
+STEP: 3
+BEGIN FINALRUN
+starting time energy
++--------------------+
+| POWER MEASUREMENTS |
++--------------------+
+** Processing System Domain rails ********** 
+    VCCPSINTFP =    2.977 J     VCCPSINTLP =    0.518 J       VCCPSAUX =    0.518 J 
+      VCCPSPLL =    0.518 J       MGTRAVCC =    0.155 J       MGTRAVTT =    0.062 J 
+VCCO_PSDDR_504 =    0.635 J         VCCOPS =    0.635 J        VCCOPS3 =    0.635 J 
+   VCCPSDDRPLL =    0.104 J 
+
+** Programmable Logic Domain rails ***********
+        VCCINT =    2.808 J        VCCBRAM =    0.104 J 
+        VCCAUX =    0.777 J         VCC1V2 =    0.104 J         VCC3V3 =    0.259 J 
+      VADJ_FMC =    0.259 J        MGTAVCC =    0.101 J        MGTAVTT =    0.101 J 
+
+
+Processing System Domain ENERGY = 6.755605 J
+Programmable Logic Domain ENERGY = 4.510845 J
+TOTAL ENERGY = 11.266450 J
+
+Processing System Domain POWER = 3.212941 W
+Programmable Logic Domain POWER = 2.145341 W
+TOTAL POWER = 5.358282 W
+
+CLOCK_REALTIME = 2.102624 sec
+# of samples: 40
+sample every (real) = 0.052566 sec
+sample every: 0.050000 sec
+TIEMPO TOTAL: 2097.17
+Final GPU Chunk: 7489
+Total n. rows : 29957
+Total n. rows on CPU: 10872
+Total n. rows on FPGA: 19085
+Actual percentage of work offloaded to the FPGA: 63 

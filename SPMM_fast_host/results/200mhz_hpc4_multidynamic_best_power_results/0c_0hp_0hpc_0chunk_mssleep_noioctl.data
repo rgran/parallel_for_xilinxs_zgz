@@ -1,0 +1,8 @@
+Run[#]	CPU Cores[#]	FPGA HP Accelerators[#]	FPGA HPC Accelerators[#]	Chunk Size[#]	IOCTL Enabled	Execution Time[ms]	Rows on CPU[#]	Rows on FPGA[#]	Scheduler Type	CPU Power[W]	FPGA Power[W]	CPU Energy[J]	FPGA Energy[J]
+1	0	0	0	0	N	350	0	0	MultiDynamic	2.547580	2.099948	0.898512	0.740636
+2	0	0	0	0	N	350	0	0	MultiDynamic	2.582423	2.099952	0.910803	0.740639
+3	0	0	0	0	N	350	0	0	MultiDynamic	2.526110	2.099927	0.890944	0.740631
+4	0	0	0	0	N	350	0	0	MultiDynamic	2.537602	2.094780	0.894994	0.738814
+5	0	0	0	0	N	350	0	0	MultiDynamic	2.526075	2.099945	0.890936	0.740642
+6	0	0	0	0	N	350	0	0	MultiDynamic	2.559714	2.099939	0.902805	0.740643
+7	0	0	0	0	N	350	0	0	MultiDynamic	2.537534	2.094783	0.894973	0.738817

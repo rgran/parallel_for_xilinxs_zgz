@@ -1,0 +1,766 @@
+LCM: 1600
+ALING CHUNK SIZE: 4
+SPMM Simulation: matrices/mixtank_new.mtx, 4, 4
+Reading Matrix Input File
+Reading header
+Reading data
+Setting number of elements: 1995041
+Reading numbers from file
+Allocating buffers for host data
+Host sds_alloc sucess (input matrix)
+Host sds_alloc sucess (output matrix)
+Host sds_alloc sucess (output matrix)
+nRows->29957 nElements->1995041
+Number of Rows: 29957
+NNZ: 1995041
+Driver successfully opened: /dev/intgendriver1
+Driver successfully opened: /dev/intgendriver2
+Driver successfully opened: /dev/intgendriver3
+Driver successfully opened: /dev/intgendriver4
+BEGIN CALIBRATE:
+STEP: 0
+Running Pipeline: 4 4 
+** FPGA thread: 3
+ Filter FPGA[4] chunk: 4 Begin = 0, End = 29957 fg 1
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 0, 4 : 4
+<HPCACC> ROWS --- begin: 0; end: 4
+DBG 3.4
+DBG 4.4.0; kernelspmm4_hpc;
+DBG 4.4.1; line_count -> 4; row_size -> 29957; nnz -> 1995041; begin ->0; end -> 4
+DBG 4.4.2; nnz_int -> 288; nnz_done -> 0
+DBG 4.4.3;
+DBG 4.4.4;
+** FPGA thread: 2
+ Filter FPGA[3] chunk: 8 Begin = 4, End = 29957 fg 1
+BUNDLE FPGA: TYPE[3] Begin,End:Size = 4, 12 : 8
+<HPCACC> ROWS --- begin: 4; end: 12
+DBG 3.3
+DBG 4.3.0; kernelspmm3_hpc;
+DBG 4.3.1; line_count -> 8; row_size -> 29957; nnz -> 1995041; begin ->4; end -> 12
+DBG 4.3.2; nnz_int -> 686; nnz_done -> 288
+DBG 4.3.3;
+DBG 4.3.4;
+** FPGA thread: 1
+ Filter FPGA[2] chunk: 16 Begin = 12, End = 29957 fg 1
+BUNDLE FPGA: TYPE[2] Begin,End:Size = 12, 28 : 16
+<HPCACC> ROWS --- begin: 12; end: 28
+DBG 3.2
+DBG 4.2.0; kernelspmm2_hpc;
+DBG 4.2.1; line_count -> 16; row_size -> 29957; nnz -> 1995041; begin ->12; end -> 28
+DBG 4.2.2; nnz_int -> 1721; nnz_done -> 974
+DBG 4.2.3;
+DBG 4.2.4;
+** FPGA thread: 0
+ Filter FPGA[1] chunk: 32 Begin = 28, End = 29957 fg 1
+BUNDLE FPGA: TYPE[1] Begin,End:Size = 28, 60 : 32
+<HPCACC> ROWS --- begin: 28; end: 60
+DBG 3.1
+DBG 4.1.0; kernelspmm1_hpc;
+DBG 4.1.1; line_count -> 32; row_size -> 29957; nnz -> 1995041; begin ->28; end -> 60
+DBG 4.1.2; nnz_int -> 3349; nnz_done -> 2695
+DBG 4.1.3;
+DBG 4.1.4;
+BUNDLE CPU: TYPE[0] Begin,End:Size = 60, 64 : 4
+<CPU> ROWS --- begin: 60; end: 64
+BUNDLE CPU: TYPE[0] Begin,End:Size = 64, 68 : 4
+<CPU> ROWS --- begin: 64; end: 68
+BUNDLE CPU: TYPE[0] Begin,End:Size = 68, 72 : 4
+<CPU> ROWS --- begin: 68; end: 72
+DBG CPU.TIMING; start -> 1752.788674 s; elapsed -> 0.000625
+=== Chunk CPU: 4 BEGIN: 64 TH: 5.99826
+BUNDLE CPU: TYPE[0] Begin,End:Size = 72, 76 : 4
+<CPU> ROWS --- begin: 72; end: 76
+DBG CPU.TIMING; start -> 1752.788765 s; elapsed -> 0.000560
+=== Chunk CPU: 4 BEGIN: 68 TH: 4.70689
+DBG CPU.TIMING; start -> 1752.788460 s; elapsed -> 0.000849
+=== Chunk CPU: 4 BEGIN: 60 TH: 3.07386
+BUNDLE CPU: TYPE[0] Begin,End:Size = 76, 80 : 4
+<CPU> ROWS --- begin: 76; end: 80
+DBG CPU.TIMING; start -> 1752.789574 s; elapsed -> 0.000451
+=== Chunk CPU: 4 BEGIN: 72 TH: BUNDLE CPU: TYPE[0] Begin,End:Size = 80, 84 : 4
+<CPU> ROWS --- begin: 80; end: 84
+6.44543
+BUNDLE CPU: TYPE[0] Begin,End:Size = 84, 88 : 4
+<CPU> ROWS --- begin: 84; end: 88
+DBG CPU.TIMING; start -> 1752.790343 s; elapsed -> 0.000415
+=== Chunk CPU: 4 BEGIN: 80 TH: 9.01315
+BUNDLE CPU: TYPE[0] Begin,End:Size = 88, 92 : 4
+<CPU> ROWS --- begin: 88; end: 92
+DBG CPU.TIMING; start -> 1752.790152 s; elapsed -> 0.000908
+=== Chunk CPU: 4 BEGIN: 76 TH: DBG CPU.TIMING; start -> 1752.790552 s; elapsed -> 0.000586
+=== Chunk CPU: 4 BEGIN: 84 TH: 5.64929
+4.10685
+BUNDLE CPU: TYPE[0] Begin,End:Size = 92, 96 : 4
+DBG CPU.TIMING; start -> 1752.790989 s; elapsed -> 0.000516
+=== Chunk CPU: 4 BEGIN: 88 TH: 7.34206
+BUNDLE CPU: TYPE[0] Begin,End:Size = 96, 100 : 4
+<CPU> ROWS --- begin: 96; end: 100
+<CPU> ROWS --- begin: 92; end: 96
+BUNDLE CPU: TYPE[0] Begin,End:Size = 100, 104 : 4
+<CPU> ROWS --- begin: 100; end: 104
+DBG CPU.TIMING; start -> 1752.791875 s; elapsed -> 0.000666
+=== Chunk CPU: 4 BEGIN: DBG CPU.TIMING; start -> 1752.791975 s; elapsed -> 0.000618
+=== Chunk CPU: 4 BEGIN: 100 TH: 92 TH: 3.79784
+BUNDLE CPU: TYPE[0] Begin,End:Size = 104, 108 : 4
+<CPU> ROWS --- begin: 104; end: 108
+DBG CPU.TIMING; start -> 1752.791858 s; elapsed -> 0.001082
+=== Chunk CPU: 4 BEGIN: 96 TH: 3.47905
+BUNDLE CPU: TYPE[0] Begin,End:Size = 108, 112 : 4
+<CPU> ROWS --- begin: 108; end: 112
+6.19169
+BUNDLE CPU: TYPE[0] Begin,End:Size = 112, 116 : 4
+<CPU> ROWS --- begin: 112; end: 116
+DBG CPU.TIMING; start -> 1752.792908 s; elapsed -> 0.000913
+=== Chunk CPU: 4 BEGIN: 104 TH: 4.22106
+BUNDLE CPU: TYPE[0] Begin,End:Size = 116, 120 : 4
+<CPU> ROWS --- begin: 116; end: 120
+DBG CPU.TIMING; start -> 1752.793638 s; elapsed -> 0.000517
+=== Chunk CPU: 4 BEGIN: 112 TH: 7.34651
+BUNDLE CPU: TYPE[0] Begin,End:Size = 120, 124 : 4
+<CPU> ROWS --- begin: 120; end: 124
+DBG CPU.TIMING; start -> 1752.793496 s; elapsed -> 0.001034
+=== Chunk CPU: 4 BEGIN: 108 TH: DBG CPU.TIMING; start -> 1752.794052 s; elapsed -> 0.000523
+=== Chunk CPU: 4 BEGIN: 116 TH: 5.89387
+BUNDLE CPU: TYPE[0] Begin,End:Size = 124, 128 : 4
+<CPU> ROWS --- begin: 124; end: 128
+3.64055
+BUNDLE CPU: TYPE[0] Begin,End:Size = 128, 132 : 4
+<CPU> ROWS --- begin: 128; end: 132
+DBG CPU.TIMING; start -> 1752.795015 s; elapsed -> 0.000423
+=== Chunk CPU: DBG CPU.TIMING; start -> 1752.794414 s; elapsed -> 0.001049
+=== Chunk CPU: 4 BEGIN: 120 TH: 4 BEGIN: 124 TH: 8.44917
+BUNDLE CPU: TYPE[0] Begin,End:Size = 132, 136 : 4
+<CPU> ROWS --- begin: 132; end: 136
+3.51256
+DBG CPU.TIMING; start -> 1752.795335 s; elapsed -> 0.000641
+=== Chunk CPU: 4 BEGIN: 128 TH: 5.48933
+BUNDLE CPU: TYPE[0] Begin,End:Size = 136, 140 : 4
+DBG CPU.TIMING; start -> 1752.795851 s; elapsed -> 0.000571
+=== Chunk CPU: 4 BEGIN: 132 TH: 5.6822
+<CPU> ROWS --- begin: 136; end: 140
+BUNDLE CPU: TYPE[0] Begin,End:Size = 140, 144 : 4
+<CPU> ROWS --- begin: 140; end: 144
+BUNDLE CPU: TYPE[0] Begin,End:Size = 144, 148 : 4
+<CPU> ROWS --- begin: 144; end: 148
+DBG CPU.TIMING; start -> 1752.796943 s; elapsed -> 0.000569
+=== Chunk CPU: 4 BEGIN: 140 TH: DBG CPU.TIMING; start -> 1752.797024 s; elapsed -> 0.000595
+=== Chunk CPU: 4 BEGIN: 144 TH: 5.78241
+BUNDLE CPU: TYPE[0] Begin,End:Size = 148, 152 : 4
+<CPU> ROWS --- begin: 148; end: 152
+6.29152
+BUNDLE CPU: TYPE[0] Begin,End:Size = 152, 156 : 4
+<CPU> ROWS --- begin: 152; end: 156
+DBG CPU.TIMING; start -> 1752.796668 s; elapsed -> 0.001631
+=== Chunk CPU: 4 BEGIN: DBG CPU.TIMING; start -> 1752.797857 s; elapsed -> 0.000461
+=== Chunk CPU: 4 BEGIN: 148 TH: 6.72357
+136 TH: BUNDLE CPU: TYPE[0] Begin,End:Size = 156, 160 : 4
+<CPU> ROWS --- begin: 156; end: 160
+2.39868
+BUNDLE CPU: TYPE[0] Begin,End:Size = 160, 164 : 4
+<CPU> ROWS --- begin: 160; end: 164
+DBG CPU.TIMING; start -> 1752.798189 s; elapsed -> 0.000867
+=== Chunk CPU: 4 BEGIN: 152 TH: DBG CPU.TIMING; start -> 1752.798703 s; elapsed -> 0.000446
+=== Chunk CPU: 4 BEGIN: 156 TH: 7.2572
+4.30322
+BUNDLE CPU: TYPE[0] Begin,End:Size = 164, 168 : 4
+<CPU> ROWS --- begin: 164; end: 168
+BUNDLE CPU: TYPE[0] Begin,End:Size = 168, 172 : 4
+<CPU> ROWS --- begin: 168; end: 172
+DBG CPU.TIMING; start -> 1752.798979 s; elapsed -> 0.000989
+=== Chunk CPU: 4 BEGIN: 160DBG CPU.TIMING; start -> 1752.799560 s; elapsed -> 0.000470
+=== Chunk CPU: 4 TH:  BEGIN: 164 TH: 6.65233
+3.88441
+BUNDLE CPU: TYPE[0] Begin,End:Size = 172, 176 : 4
+<CPU> ROWS --- begin: 172; end: 176
+BUNDLE CPU: TYPE[0] Begin,End:Size = 176, 180 : 4
+<CPU> ROWS --- begin: 176; end: 180
+BUNDLE CPU: TYPE[0] Begin,End:Size = 180, 184 : 4
+<CPU> ROWS --- begin: 180; end: 184
+DBG CPU.TIMING; start -> 1752.799826 s; elapsed -> 0.001015
+=== Chunk CPU: 4 BEGIN: 168 TH: 3.70023
+BUNDLE CPU: TYPE[0] Begin,End:Size = 184, 188 : 4
+<CPU> ROWS --- begin: 184; end: 188
+DBG CPU.TIMING; start -> 1752.800391 s; elapsed -> 0.000652
+=== Chunk CPU: 4 BEGIN: 172 TH: DBG CPU.TIMING; start -> 1752.800599 s; elapsed -> 0.000727
+=== Chunk CPU: 44.0528
+BUNDLE CPU: TYPE[0] Begin,End:Size = 188, 192 : 4
+<CPU> ROWS --- begin: 188; end: 192
+ BEGIN: 180 TH: 4.76611
+BUNDLE CPU: TYPE[0] Begin,End:Size = 192, 196 : 4
+<CPU> ROWS --- begin: 192; end: 196
+DBG CPU.TIMING; start -> 1752.800499 s; elapsed -> 0.001612
+DBG CPU.TIMING; start -> 1752.801636 s; elapsed -> 0.000495
+=== Chunk CPU: 4 BEGIN: 188 TH: 7.61738
+BUNDLE CPU: TYPE[0] Begin,End:Size = 196, 200 : 4
+<CPU> ROWS --- begin: 196; end: 200
+DBG CPU.TIMING; start -> 1752.801336 s; elapsed -> 0.000985
+=== Chunk CPU: 4 BEGIN: 184 TH: DBG CPU.TIMING; start -> 1752.801771 s; elapsed -> 0.000676
+=== Chunk CPU: 4 BEGIN: 192 TH: 4.98565
+BUNDLE CPU: TYPE[0] Begin,End:Size = 200, 204 : 4
+<CPU> ROWS --- begin: 200; end: 204
+=== Chunk CPU: 4 BEGIN: 176 TH: 2.43518
+BUNDLE CPU: TYPE[0] Begin,End:Size = 204, 208 : 4
+<CPU> ROWS --- begin: 204; end: 208
+3.63952
+BUNDLE CPU: TYPE[0] Begin,End:Size = 208, 212 : 4
+<CPU> ROWS --- begin: 208; end: 212
+DBG CPU.TIMING; start -> 1752.802273 s; elapsed -> 0.000410
+=== Chunk CPU: 4 BEGIN: 196 TH: 3.66198
+BUNDLE CPU: TYPE[0] Begin,End:Size = 212, 216 : 4
+<CPU> ROWS --- begin: 212; end: 216
+DBG CPU.TIMING; start -> 1752.802997 s; elapsed -> 0.000570
+=== Chunk CPU: 4 BEGIN: 204DBG CPU.TIMING; start -> 1752.802779 s; elapsed -> 0.000803
+=== Chunk CPU: 4 BEGIN: 200 TH: 4.04796
+BUNDLE CPU: TYPE[0] Begin,End:Size = 216, 220 : 4
+<CPU> ROWS --- begin: 216; end: 220
+ TH: 6.67031
+BUNDLE CPU: TYPE[0] Begin,End:Size = 220, 224 : 4DBG CPU.TIMING; start -> 1752.803335 s; elapsed -> 0.001145
+=== Chunk CPU: 4 BEGIN: 208 TH: 
+<CPU> ROWS --- begin: 220; end: 224
+DBG CPU.TIMING; start -> 1752.803890 s; elapsed -> 0.000770
+=== Chunk CPU: 4 BEGIN: 216 TH: DBG CPU.TIMING; start -> 1752.803484 s; elapsed -> 0.000720
+=== Chunk CPU: 4 BEGIN: 212 TH: 2.70133
+BUNDLE CPU: TYPE[0] Begin,End:Size = 224, 228 : 4
+<CPU> ROWS --- begin: 224; end: 228
+3.17382
+BUNDLE CPU: TYPE[0] Begin,End:Size = 228, 232 : 4
+<CPU> ROWS --- begin: 228; end: 232
+4.10542
+BUNDLE CPU: TYPE[0] Begin,End:Size = 232, 236 : 4
+<CPU> ROWS --- begin: 232; end: 236
+DBG CPU.TIMING; start -> 1752.805085 s; elapsed -> 0.000550
+=== Chunk CPU: 4 BEGIN: 224 TH: 6.97472
+BUNDLE CPU: TYPE[0] Begin,End:Size = 236, 240 : 4
+<CPU> ROWS --- begin: 236; end: 240
+DBG CPU.TIMING; start -> 1752.805529 s; elapsed -> 0.000464
+=== Chunk CPU: 4 BEGIN: 232 TH: 8.15292
+BUNDLE CPU: TYPE[0] Begin,End:Size = 240, 244 : 4DBG CPU.TIMING; start -> 1752.805774 s; elapsed -> 0.000451
+=== Chunk CPU: 4 BEGIN: 236 TH: 
+<CPU> ROWS --- begin: 240; end: 244
+8.38047
+BUNDLE CPU: TYPE[0] Begin,End:Size = 244, 248 : 4
+<CPU> ROWS --- begin: 244; end: 248
+DBG CPU.TIMING; start -> 1752.805426 s; elapsed -> 0.001072
+=== Chunk CPU: 4 BEGIN: 228 TH: 3.51349
+DBG CPU.TIMING; start -> 1752.804827 s; elapsed -> 0.001752
+=== Chunk CPU: 4 BEGIN: 220 TH: 1.97622
+BUNDLE CPU: TYPE[0] Begin,End:Size = 248, 252 : 4
+<CPU> ROWS --- begin: 248; end: 252
+DBG CPU.TIMING; start -> 1752.806427 s; elapsed -> 0.000628
+=== Chunk CPU: 4 BEGIN: 244 TH: BUNDLE CPU: TYPE[0] Begin,End:Size = 252, DBG CPU.TIMING; start -> 1752.806334 s; elapsed -> 0.000828
+=== Chunk CPU: 4 BEGIN: 240 TH: 5.94318
+256 : 4.387
+4
+<CPU> ROWS --- begin: 252; end: 256
+BUNDLE CPU: TYPE[0] Begin,End:Size = 256, 260 : 4
+<CPU> ROWS --- begin: 256; end: 260
+BUNDLE CPU: TYPE[0] Begin,End:Size = 260, 264 : 4
+<CPU> ROWS --- begin: 260; end: 264
+DBG CPU.TIMING; start -> 1752.807616 s; elapsed -> 0.000446
+=== Chunk CPU: 4 BEGIN: 260 TH: 8.49131
+BUNDLE CPU: TYPE[0] Begin,End:Size = 264, 268 : 4
+<CPU> ROWS --- begin: 264; end: 268
+DBG CPU.TIMING; start -> 1752.807514 s; elapsed -> 0.000655
+=== Chunk CPU: 4 BEGIN: 256 TH: 5.44717
+BUNDLE CPU: TYPE[0] Begin,End:Size = 268, 272 : 4
+<CPU> ROWS --- begin: 268; end: 272
+DBG CPU.TIMING; start -> 1752.807068 s; elapsed -> 0.001441
+=== Chunk CPU: 4 BEGIN: 248 TH: DBG CPU.TIMING; start -> 1752.808216 s; elapsed -> 0.000412
+=== Chunk CPU: 4 BEGIN: 264 TH: 8.11851
+BUNDLE CPU: TYPE[0] Begin,End:Size = 272, 276 : 4
+<CPU> ROWS --- begin: 272; end: 276
+2.65165
+BUNDLE CPU: TYPE[0] Begin,End:Size = 276, 280 : 4
+<CPU> ROWS --- begin: 276; end: 280
+DBG CPU.TIMING; start -> 1752.808386 s; elapsed -> 0.000467
+=== Chunk CPU: 4 BEGIN: 268 TH: 4.95728
+DBG CPU.TIMING; start -> 1752.808824 s; elapsed -> 0.000492
+=== Chunk CPU: 4 BEGIN: 272 TH: 7.51562
+BUNDLE CPU: TYPE[0] Begin,End:Size = 280, 284 : 4
+<CPU> ROWS --- begin: 280; end: 284
+DBG CPU.TIMING; start -> 1752.807435 s; elapsed -> 0.001460
+=== Chunk CPU: 4 BEGIN: 252 TH: 1.85651
+BUNDLE CPU: TYPE[0] Begin,End:Size = 284, 288 : 4
+<CPU> ROWS --- begin: 284; end: 288
+BUNDLE CPU: TYPE[0] Begin,End:Size = 288, 292 : 4
+<CPU> ROWS --- begin: 288; end: 292
+DBG CPU.TIMING; start -> 1752.809475 s; elapsed -> 0.000428
+=== Chunk CPU: 4 BEGIN: 280 TH: 7.99981
+BUNDLE CPU: TYPE[0] Begin,End:Size = 292, 296 : 4
+<CPU> ROWS --- begin: 292; end: 296
+DBG CPU.TIMING; start -> 1752.809731 s; elapsed -> 0.000422
+=== Chunk CPU: 4 BEGIN: 284 TH: 8.93342
+BUNDLE CPU: TYPE[0] Begin,End:Size = 296, 300 : 4
+<CPU> ROWS --- begin: 296; end: 300
+DBG CPU.TIMING; start -> 1752.810091 s; elapsed -> 0.000333
+=== Chunk CPU: 4 BEGIN: 292 TH: 11.2291
+BUNDLE CPU: TYPE[0] Begin,End:Size = 300, 304 : 4
+<CPU> ROWS --- begin: 300; end: 304
+DBG CPU.TIMING; start -> 1752.809159 s; elapsed -> 0.001420
+=== Chunk CPU: 4 BEGIN: 276 TH: DBG CPU.TIMING; start -> 1752.809946 s; elapsed -> 0.000639
+=== Chunk CPU: 4 BEGIN: 288 TH: 2.68601
+DBG CPU.TIMING; start -> 1752.810291 s; elapsed -> 0.000608
+=== Chunk CPU: 4 BEGIN: 296 TH: 6.30829
+4.71266
+BUNDLE CPU: TYPE[0] Begin,End:Size = 304, 308 : 4
+<CPU> ROWS --- begin: 304; end: 308
+DBG CPU.TIMING; start -> 1752.810563 s; elapsed -> 0.000720
+=== Chunk CPU: 4 BEGIN: 300 TH: 5.36662
+BUNDLE CPU: TYPE[0] Begin,End:Size = 308, 312 : 4
+<CPU> ROWS --- begin: 308; end: 312
+BUNDLE CPU: TYPE[0] Begin,End:Size = 312, 316 : 4
+<CPU> ROWS --- begin: 312; end: 316
+BUNDLE CPU: TYPE[0] Begin,End:Size = 316, 320 : 4
+<CPU> ROWS --- begin: 316; end: 320
+DBG CPU.TIMING; start -> 1752.811549 s; elapsed -> 0.000537
+=== Chunk CPU: 4DBG CPU.TIMING; start -> 1752.811465 s; elapsed -> 0.000652
+=== Chunk CPU:  BEGIN: 312 TH: 7.10203
+BUNDLE CPU: TYPE[0] Begin,End:Size = 320, 324 : 4
+<CPU> ROWS --- begin: 320; end: 324
+4 BEGIN: 308 TH: 5.78199
+BUNDLE CPU: TYPE[0] Begin,End:Size = 324, 328 : 4
+<CPU> ROWS --- begin: 324; end: 328
+DBG CPU.TIMING; start -> 1752.811277 s; elapsed -> 0.001348
+=== Chunk CPU: 4 BEGIN: 304 TH: DBG CPU.TIMING; start -> 1752.812296 s; elapsed -> 0.000471
+=== Chunk CPU: 4 BEGIN: 320 TH: 7.61404
+BUNDLE CPU: TYPE[0] Begin,End:Size = 328, 332 : 4
+<CPU> ROWS --- begin: 328; end: 332
+2.82632
+BUNDLE CPU: TYPE[0] Begin,End:Size = 332, 336 : 4DBG CPU.TIMING; start -> 1752.812452 s; elapsed -> 0.000615
+=== Chunk CPU: 4 BEGIN: 324 TH: DBG CPU.TIMING; start -> 1752.812937 s; elapsed -> 0.000423
+=== Chunk CPU: 4 BEGIN: 328 TH: 8.91888
+
+<CPU> ROWS --- begin: 332; end: 336
+4.62181
+BUNDLE CPU: TYPE[0] Begin,End:Size = 336, 340 : 4
+<CPU> ROWS --- begin: 336; end: 340
+BUNDLE CPU: TYPE[0] Begin,End:Size = 340, 344 : 4
+<CPU> ROWS --- begin: 340; end: 344
+DBG CPU.TIMING; start -> 1752.812067 s; elapsed -> 0.000786
+=== Chunk CPU: 4 BEGIN: 316 TH: 2.23193
+BUNDLE CPU: TYPE[0] Begin,End:Size = 344, 348 : 4
+<CPU> ROWS --- begin: 344; end: 348
+DBG CPU.TIMING; start -> 1752.813624 s; elapsed -> 0.000749
+=== Chunk CPU: 4 BEGIN: 336 TH: 5.16128
+BUNDLE CPU: TYPE[0] Begin,End:Size = 348, 352 : 4
+<CPU> ROWS --- begin: 348; end: 352
+DBG CPU.TIMING; start -> 1752.813750 s; elapsed -> 0.000800
+=== Chunk CPU: 4 BEGIN: 340 TH: 4.8233
+BUNDLE CPU: TYPE[0] Begin,End:Size = 352, 356 : 4
+<CPU> ROWS --- begin: 352; end: 356
+DBG CPU.TIMING; start -> 1752.813509 s; elapsed -> 0.001352
+=== Chunk CPU: 4 BEGIN: 332 TH: 2.81696
+BUNDLE CPU: TYPE[0] Begin,End:Size = 356, 360 : 4
+<CPU> ROWS --- begin: 356; end: 360
+DBG CPU.TIMING; start -> 1752.814513 s; elapsed -> 0.000647
+=== Chunk CPU: 4 BEGIN: 348 TH: DBG CPU.TIMING; start -> 1752.814728 s; elapsed -> 0.000541
+=== Chunk CPU: 4 BEGIN: 352 TH: 4.65068
+BUNDLE CPU: TYPE[0] Begin,End:Size = 360, 364 : 4
+<CPU> ROWS --- begin: 360; end: 364
+5.59288
+BUNDLE CPU: TYPE[0] Begin,End:Size = 364, 368 : 4
+<CPU> ROWS --- begin: 364; end: 368
+DBG CPU.TIMING; start -> 1752.814019 s; elapsed -> 0.001821
+=== Chunk CPU: 4 BEGIN: 344 TH: DBG CPU.TIMING; start -> 1752.815603 s; elapsed -> 0.000453
+=== Chunk CPU: 4 BEGIN: 360 TH: 8.33108
+BUNDLE CPU: TYPE[0] Begin,End:Size = 368, 372 : 4
+<CPU> ROWS --- begin: 368; end: 372
+DBG CPU.TIMING; start -> 1752.815746 s; elapsed -> 0.000464
+=== Chunk CPU: 4 BEGIN: 364 TH: 8.09535
+BUNDLE CPU: TYPE[0] Begin,End:Size = 372, 376 : 4
+<CPU> ROWS --- begin: 372; end: 376
+2.16319
+BUNDLE CPU: TYPE[0] Begin,End:Size = 376, 380 : 4
+<CPU> ROWS --- begin: 376; end: 380
+DBG CPU.TIMING; start -> 1752.815343 s; elapsed -> 0.001344
+=== Chunk CPU: 4 BEGIN: 356 TH: 2.83407
+BUNDLE CPU: TYPE[0] Begin,End:Size = 380, 384 : 4
+DBG 4.4.5;
+DBG CPU.TIMING; start -> 1752.816210 s; elapsed -> 0.000706
+=== Chunk CPU: 4 BEGIN: 368 TH: 3.91686
+DBG 4.4.6;
+DBG 3.4.TIMING; start -> 1752.786795 s; elapsed -> 0.030506
+=== Chunk GPU[4DBG CPU.TIMING; start -> 1752.816604 s; elapsed -> 0.000603
+=== Chunk CPU: 4 BEGIN: 376 TH: DBG CPU.TIMING; start -> 1752.816397 s; elapsed -> 0.001088
+BUNDLE CPU: TYPE[0] Begin,End:Size = 384, 2300 : 1916
+<CPU> ROWS --- begin: 384; end: 2300
+<CPU> ROWS --- begin: 380; end: 384
+=== Chunk CPU: 4 BEGIN: 372 TH: 3.35395
+BUNDLE CPU: TYPE[0] Begin,End:Size = 2300, 3940 : 1640
+<CPU> ROWS --- begin: 2300; end: 3940
+]: 4 BEGIN: 0 TH: 0.130798 it: 0
+5.28835
+*** Checking FPGA[4] step: 0 chunk sizes: 0 , DBG 4.3.5;
+0 , DBG 4.3.6;
+DBG 3.3.TIMING; start -> 1752.787324 s; elapsed -> 0.030855
+=== Chunk GPU[3]: 8 BEGIN: 4 TH: 0.258914 it: 4
+4
+                     thr: 0 , 0 , 0.130798
+               decay thr: 0 , 0 , 0.128182
+FPGA[4] FILLED OK
+ Filter FPGA[4] chunk: 64 Begin = 3940, End = 29957 fg 0.0389982
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 3940, 4004 : 64
+<HPCACC> ROWS --- begin: 3940; end: 4004
+DBG 3.4
+DBG 4.4.0; kernelspmm4_hpc;
+*** Checking FPGA[3] step: 1 chunk sizes: 0 , 4 , 8
+                     thr: 0 , 0.130798 , 0.258914
+               decay thr: 0 , 0.128182 , 0.253736
+FPGA[3] FILLED OK
+ Filter FPGA[3DBG 4.4.1; line_count -> 64; row_size -> 29957; nnz -> 1995041; begin ->3940; end -> 4004
+DBG 4.4.2; nnz_int -> 2736; nnz_done -> 430573
+DBG 4.4.3;
+DBG 4.4.4;
+] chunk: 128 Begin = 4004, End = 29957 fg 0.0389982
+BUNDLE FPGA: TYPE[3] Begin,End:Size = 4004, 4132 : 128
+<HPCACC> ROWS --- begin: 4004; end: 4132
+DBG 3.3
+DBG 4.3.0; kernelspmm3_hpc;
+DBG 4.3.1; line_count -> 128; row_size -> 29957; nnz -> 1995041; begin ->4004; end -> 4132
+DBG 4.3.2; nnz_int -> 4974; nnz_done -> 433309
+DBG 4.3.3;
+DBG 4.3.4;
+BUNDLE CPU: TYPE[0] Begin,End:Size = 4132, 9360 : 5228
+DBG 4.2.5;
+DBG 4.2.6;
+DBG 3.2.TIMING; start -> 1752.787840 s; elapsed -> 0.031756
+=== Chunk GPU[2]: 16 BEGIN: 12 TH: 0.503043 it: 12
+*** Checking FPGA[2] step: 2 chunk sizes: <CPU> ROWS --- begin: 4132; end: 9360
+4 , 8 , 16
+                     thr: 0.130798 , 0.258914 , 0.503043
+               decay thr: 0.130798 , 0.253736 , 0.492982
+FPGA[2] FILLED OK
+ Filter FPGA[2] chunk: 256 Begin = 9360, End = 29957 fg 0.0489593
+BUNDLE FPGA: TYPE[2] Begin,End:Size = 9360, 9616 : 256
+<HPCACC> ROWS --- begin: 9360; end: 9616
+DBG 3.2
+DBG 4.2.0; kernelspmm2_hpc;
+DBG 4.2.1; line_count -> 256; row_size -> 29957; nnz -> 1995041; begin ->9360; end -> 9616
+DBG 4.2.2; nnz_int -> 29531; nnz_done -> 738777
+DBG 4.2.3;
+DBG 4.2.4;
+DBG CPU.TIMING; start -> 1752.817687 s; elapsed -> 0.002846
+=== Chunk CPU: 4 BEGIN: 380 TH: DBG 4.1.5;
+1.32342
+DBG 4.1.6;
+DBG 3.1.TIMING; start -> 1752.788118 s; elapsed -> 0.032702
+=== Chunk GPU[1]: 32 BEGIN: 28 TH: 0.977378 it: 28
+BUNDLE CPU: TYPE[0] Begin,End:Size = 9616, 10964 : 1348
+<CPU> ROWS --- begin: 9616; end: 10964
+*** Checking FPGA[1] step: 3 chunk sizes: 8 , 16 , 32
+                     thr: 0.258914 , 0.503043 , 0.977378
+               decay thr: 0.258914 , 0.492982 , 0.957831
+FPGA[1] FILLED OK
+ Filter FPGA[1] chunk: 512 Begin = 10964, End = 29957 fg 0.380107
+BUNDLE FPGA: TYPE[1] Begin,End:Size = 10964, 11476 : 512
+<HPCACC> ROWS --- begin: 10964; end: 11476
+DBG 3.1
+DBG 4.1.0; kernelspmm1_hpc;
+DBG 4.1.1; line_count -> 512; row_size -> 29957; nnz -> 1995041; begin ->10964; end -> 11476
+DBG 4.1.2; nnz_int -> 59810; nnz_done -> 923625
+DBG 4.1.3;
+DBG 4.1.4;
+DBG 4.4.5;
+DBG 4.4.6;
+DBG 3.4.TIMING; start -> 1752.818611 s; elapsed -> 0.032899
+=== Chunk GPU[4]: 64 BEGIN: 3940 TH: 1.94227 it: 3940
+*** Checking FPGA[4] step: 4 chunk sizes: 16 , 32 , 64
+                     thr: 0.503043 , 0.977378 , 1.94227
+               decay thr: 0.503043 , 0.957831 , 1.90342
+FPGA[4] FILLED OK
+ Filter FPGA[4] chunk: 1024 Begin = 11476, End = 29957 fg 0.380107
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 11476, 12500 : 1024
+<HPCACC> ROWS --- begin: 11476; end: 12500
+DBG 3.4
+DBG 4.4.0; kernelspmm4_hpc;
+DBG 4.4.1; line_count -> 1024; row_size -> 29957; nnz -> 1995041; begin ->11476; end -> 12500
+DBG 4.4.2; nnz_int -> 72663; nnz_done -> 983435
+DBG 4.4.3;
+DBG 4.4.4;
+DBG 4.3.5;
+DBG 4.3.6;
+DBG 3.3.TIMING; start -> 1752.819108 s; elapsed -> 0.034402
+=== Chunk GPU[3]: 128 BEGIN: 4004 TH: 3.7148 it: 4004
+*** Checking FPGA[3] step: 5 chunk sizes: 32 , 64 , 128
+                     thr: 0.977378 , 1.94227 , 3.7148
+               decay thr: 0.977378 , 1.90342 , 3.64051
+FPGA[3] FILLED OK
+ Filter FPGA[3] chunk: 2048 Begin = 12500, End = 29957 fg 0.380107
+BUNDLE FPGA: TYPE[3] Begin,End:Size = 12500, 14548 : 2048
+<HPCACC> ROWS --- begin: 12500; end: 14548
+DBG 3.3
+DBG 4.3.0; kernelspmm3_hpc;
+DBG 4.3.1; line_count -> 2048; row_size -> 29957; nnz -> 1995041; begin ->12500; end -> 14548
+DBG 4.3.2; nnz_int -> 84273; nnz_done -> 1056098
+DBG 4.3.3;
+DBG 4.3.4;
+DBG 4.2.5;
+DBG 4.2.6;
+DBG 3.2.TIMING; start -> 1752.820203 s; elapsed -> 0.048850
+=== Chunk GPU[2]: 256 BEGIN: 9360 TH: 5.23432 it: 9360
+*** Checking FPGA[2] step: 6 chunk sizes: 64 , 128 , 256
+                     thr: 1.94227 , 3.7148 , 5.23432
+               decay thr: 1.94227 , 3.64051 , 5.12963
+FPGA[2] FILLED OK
+ Filter FPGA[2] chunk: 4096 Begin = 14548, End = 29957 fg 0.380107
+BUNDLE FPGA: TYPE[2] Begin,End:Size = 14548, 18644 : 4096
+<HPCACC> ROWS --- begin: 14548; end: 18644
+DBG 3.2
+DBG 4.2.0; kernelspmm2_hpc;
+DBG 4.2.1; line_count -> 4096; row_size -> 29957; nnz -> 1995041; begin ->14548; end -> 18644
+DBG 4.2.2; nnz_int -> 343294; nnz_done -> 1140371
+DBG 4.2.3;
+DBG 4.2.4;
+DBG 4.1.5;
+DBG 4.1.6;
+DBG 3.1.TIMING; start -> 1752.821600 s; elapsed -> 0.068454
+=== Chunk GPU[1]: 512 BEGIN: 10964 TH: 7.47308 it: 10964
+*** Checking FPGA[1] step: 7 chunk sizes: 128 , 256 , 512
+                     thr: 3.7148 , 5.23432 , 7.47308
+               decay thr: 3.7148 , 5.12963 , 7.32362
+FPGA[1] FILLED OK
+ Filter FPGA[1] chunk: 8192 Begin = 18644, End = 29957 fg 0.380107
+BUNDLE FPGA: TYPE[1] Begin,End:Size = 18644, 26836 : 8192
+<HPCACC> ROWS --- begin: 18644; end: 26836
+DBG 3.1
+DBG 4.1.0; kernelspmm1_hpc;
+DBG 4.1.1; line_count -> 8192; row_size -> 29957; nnz -> 1995041; begin ->18644; end -> 26836
+DBG 4.1.2; nnz_int -> 425355; nnz_done -> 1483665
+DBG 4.1.3;
+DBG 4.1.4;
+DBG 4.4.5;
+DBG 4.4.6;
+DBG 3.4.TIMING; start -> 1752.852130 s; elapsed -> 0.083173
+=== Chunk GPU[4]: 1024 BEGIN: 11476 TH: 12.3014 it: 11476
+*** Checking FPGA[4] step: 8 chunk sizes: 256 , 512 , 1024
+                     thr: 5.23432 , 7.47308 , 12.3014
+               decay thr: 5.23432 , 7.32362 , 12.0554
+FPGA[4] FILLED OK
+ Filter FPGA[4] chunk: 16384 Begin = 26836, End = 29957 fg 0.380107
+BUNDLE FPGA (iterationspace tail): TYPE[4] Begin,End:Size = 26836, 29956 : 3120
+<HPCACC> ROWS --- begin: 26836; end: 29956
+DBG 3.4
+DBG 4.4.0; kernelspmm4_hpc;
+DBG 4.4.1; line_count -> 3120; row_size -> 29957; nnz -> 1995041; begin ->26836; end -> 29956
+DBG 4.4.2; nnz_int -> 86004; nnz_done -> 1909020
+DBG 4.4.3;
+DBG 4.4.4;
+DBG 4.3.5;
+DBG 4.3.6;
+DBG 3.3.TIMING; start -> 1752.854081 s; elapsed -> 0.094928
+=== Chunk GPU[3]: 2048 BEGIN: 12500 TH: 21.559 it: 12500
+*** Checking FPGA[3] step: 9 chunk sizes: 512 , 1024 , 2048
+                     thr: 7.47308 , 12.3014 , 21.559
+               decay thr: 7.47308 , 12.0554 , 21.1279
+FPGA[3] FILLED OK
+ Filter FPGA[3] chunk: 29957 Begin = 29956, End = 29957 fg 0.380107
+BUNDLE CPU (iterationspace tail): TYPE[0] Begin,End:Size = 29956, 29956 : 0
+<CPU> ROWS --- begin: 29956; end: 29956
+DBG CPU.TIMING; start -> 1752.949605 s; elapsed -> 0.000001
+=== Chunk CPU: 0 BEGIN: 29956 TH: 0
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29956, 29957 : 1
+<CPU> ROWS --- begin: 29956; end: 29957
+DBG CPU.TIMING; start -> 1752.949751 s; elapsed -> 0.000037
+=== Chunk CPU: 1 BEGIN: 29956 TH: 16.3087
+DBG 4.4.5;
+DBG 4.4.6;
+DBG 3.4.TIMING; start -> 1752.935874 s; elapsed -> 0.099144
+=== Chunk GPU[4]: 3120 BEGIN: 26836 TH: 31.4494 it: 26836
+DBG 4.2.5;
+DBG 4.2.6;
+DBG 3.2.TIMING; start -> 1752.869711 s; elapsed -> 0.250539
+=== Chunk GPU[2]: 4096 BEGIN: 14548 TH: 16.3448 it: 14548
+DBG 4.1.5;
+DBG 4.1.6;
+DBG 3.1.TIMING; start -> 1752.890625 s; elapsed -> 0.311182
+=== Chunk GPU[1]: 8192 BEGIN: 18644 TH: 26.3207 it: 18644
+DBG CPU.TIMING; start -> 1752.817854 s; elapsed -> 1.179717
+=== Chunk CPU: 1640 BEGIN: 2300 TH: 1.39004
+DBG CPU.TIMING; start -> 1752.821197 s; elapsed -> 1.434273
+=== Chunk CPU: 1348 BEGIN: 9616 TH: 0.939776
+DBG CPU.TIMING; start -> 1752.817646 s; elapsed -> 1.458978
+=== Chunk CPU: 1916 BEGIN: 384 TH: 1.31317
+DBG CPU.TIMING; start -> 1752.819794 s; elapsed -> 2.368046
+=== Chunk CPU: 5228 BEGIN: 4132 TH: 2.2074
+STEP: 1
+Running Pipeline: 4 4 
+*** Checking FPGA[4] step: 12 chunk sizes: 0 , 0 , 3120
+                     thr: 0 , 0 , 31.4494
+               decay thr: 0 , 0 , 30.8204
+ Filter FPGA[4] chunk: 29957 Begin = 0, End = 29957 fg 0.380107
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 0, 29957 : 29957
+<HPCACC> ROWS --- begin: 0; end: 29957
+DBG 3.4
+DBG 4.4.0; kernelspmm4_hpc;
+DBG 4.4.1; line_count -> 29957; row_size -> 29957; nnz -> 1995041; begin ->0; end -> 29957
+DBG 4.4.2; nnz_int -> 1995041; nnz_done -> 0
+DBG 4.4.3;
+DBG 4.4.4;
+DBG 4.4.5;
+DBG 4.4.6;
+DBG 3.4.TIMING; start -> 1755.189516 s; elapsed -> 1.180290
+=== Chunk GPU[4]: 29957 BEGIN: 0 TH: 25.3787 it: 0
+STEP: 2
+Running Pipeline: 4 4 
+*** Checking FPGA[4] step: 13 chunk sizes: 0 , 3120 , 29957
+                     thr: 0 , 31.4494 , 25.3787
+               decay thr: 0 , 30.8204 , 24.8712
+******** Stable phase ********* np: 4 mea: 13
+ Filter FPGA[4] chunk: 29956 Begin = 0, End = 29957 fg 0.380107
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 0, 29956 : 29956
+<HPCACC> ROWS --- begin: 0; end: 29956
+DBG 3.4
+DBG 4.4.0; kernelspmm4_hpc;
+ Filter FPGA[3] chunk: 29956 Begin = 29956, End = 29957 fg 0.380107
+  stopConditionModeOn Chunk FPGA= 29956 Begin = 29956, End = 29957 fg 0.380107
+***** Concord Case - Active FPGAs= 4 > Begin: 29956 end: 29957
+BUNDLE CONCORD CPU: TYPE[0] Begin,End:Size = 29956, 29957 : 1
+<CPU> ROWS --- begin: 29956; end: 29957
+DBG 4.4.1; line_count -> 29956; row_size -> 29957; nnz -> 1995041; begin ->0; end -> 29956
+DBG 4.4.2; nnz_int -> 1995024; nnz_done -> 0
+DBG 4.4.3;
+DBG 4.4.4;
+DBG CPU.TIMING; start -> 1756.372130 s; elapsed -> 0.000027
+=== Chunk CPU: 1 BEGIN: 29956 TH: 4.47822
+DBG 4.4.5;
+DBG 4.4.6;
+DBG 3.4.TIMING; start -> 1756.371780 s; elapsed -> 1.180624
+=== Chunk GPU[4]: 29956 BEGIN: 0 TH: 25.3705 it: 0
+STEP: 3
+Running Pipeline: 4 4 
+Calculate Chunk FPGA[4] chunk: 29948 step: 13 chunk sizes: 0 , 3120 , 29956
+                     thr: 0 , 31.4494 , 25.3705
+ Filter FPGA[4] chunk: 29948 Begin = 0, End = 29957 fg 0.380107
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 0, 29948 : 29948
+<HPCACC> ROWS --- begin: 0; end: 29948
+DBG 3.4
+DBG 4.4.0; kernelspmm4_hpc;
+ Filter FPGA[3] chunk: 29948 Begin = 29948, End = 29957 fg 0.380107
+  stopConditionModeOn Chunk FPGA= 29948 Begin = 29948, End = 29957 fg 0.380107
+***** Concord Case - Active FPGAs= 4 > Begin: 29948 end: 29957
+BUNDLE CONCORD CPU: TYPE[0] Begin,End:Size = 29948, 29952 : 4
+<CPU> ROWS --- begin: 29948; end: 29952
+ Filter FPGA[1] chunk: 29948 Begin = 29952, End = 29957 fg 0.380107
+***** Concord Case - Active FPGAs= 3 > Begin: 29952 end: 29957
+BUNDLE CONCORD CPU: TYPE[0] Begin,End:Size = 29952DBG CPU.TIMING; start -> 1757.554501 s; elapsed -> 0.000131
+=== Chunk CPU: 4 BEGIN: 29948 TH: , 29956 : 4
+<CPU> ROWS --- begin: 29952; end: 29956
+17.9273 Filter FPGA[2] chunk: 29948 Begin = 29956, End = 29957 fg 0.380107
+***** Concord Case - Active FPGAs= 2 > Begin: 29956 end: DBG CPU.TIMING; start -> 1757.554818 s; elapsed -> 0.000133
+=== Chunk CPU: 4 BEGIN: 29952 TH: 20.8638
+29957
+BUNDLE CONCORD CPU: TYPE[0] Begin,End:Size = 29956, 29957 : 1
+<CPU> ROWS --- begin: 29956; end: 29957
+
+DBG CPU.TIMING; start -> 1757.555168 s; elapsed -> 0.000029
+=== Chunk CPU: 1 BEGIN: 29956 TH: 17.0425
+DBG 4.4.1; line_count -> 29948; row_size -> 29957; nnz -> 1995041; begin ->0; end -> 29948
+DBG 4.4.2; nnz_int -> 1994825; nnz_done -> 0
+DBG 4.4.3;
+DBG 4.4.4;
+DBG 4.4.5;
+DBG 4.4.6;
+DBG 3.4.TIMING; start -> 1757.554173 s; elapsed -> 1.181211
+=== Chunk GPU[4]: 29948 BEGIN: 0 TH: 25.3511 it: 0
+BEGIN FINALRUN
+DBG 0
+DBG 1
+DBG 2.0
+starting time energy
+Running Pipeline: 4 4 
+Calculate Chunk FPGA[4] chunk: 29924 step: 13 chunk sizes: 0 , 3120 , 29948
+                     thr: 0 , 31.4494 , 25.3511
+ Filter FPGA[4] chunk: 29924 Begin = 0, End = 29957 fg 0.380107
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 0, 29924 : 29924
+<HPCACC> ROWS --- begin: 0; end: 29924
+DBG 3.4
+DBG 4.4.0; kernelspmm4_hpc;
+DBG 4.4.1; line_count -> 29924; row_size -> 29957; nnz -> 1995041; begin ->0; end -> 29924
+DBG 4.4.2; nnz_int -> 1994165; nnz_done -> 0
+DBG 4.4.3;
+DBG 4.4.4;
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29924, 29928 : 4
+<CPU> ROWS --- begin: 29924; end: 29928
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29928, 29932 : 4
+DBG CPU.TIMING; start -> 1758.758605 s; elapsed -> 0.000153
+=== Chunk CPU: 4 BEGIN: 29924 TH: 6.10884
+<CPU> ROWS --- begin: 29928; end: 29932
+ Filter FPGA[2] chunk: 29924 Begin = 29932, End = 29957 fg 20.0436
+  stopConditionModeOn Chunk FPGA= 29924 Begin = 29932, End = 29957 fg 20.0436
+***** Concord Case - Active FPGAs= 4 > Begin: 29932DBG CPU.TIMING; start -> 1758.759178 s; elapsed -> 0.000152
+=== Chunk CPU: 4 BEGIN: 29928 TH:  end: 29957
+BUNDLE CONCORD CPU: TYPE[0] Begin,End:Size = 29932, 29940 : 8
+<CPU> ROWS --- begin: 29932; end: 29940
+ Filter FPGA[3] chunk: 29924 Begin = 29940, End = 29957 fg 20.0436
+***** Concord Case - Active FPGAs= 3 > Begin: 29940 end: 29957
+BUNDLE CONCORD CPU: TYPE[0] Begin,End:Size = 29940, 29944 : 4
+<CPU> ROWS --- begin: 29940; end: 29944
+ Filter FPGA[1] chunk: 29924 Begin = 29944, End = 29957 fg DBG CPU.TIMING; start -> 1758.759574 s; elapsed -> 0.000280
+=== Chunk CPU: 8 BEGIN: 29932 TH: 20.0436
+***** Concord Case - Active FPGAs= 2 > Begin: 29944 end: 29957
+BUNDLE CONCORD CPU: TYPE[0] Begin,End:Size = 29944, 25.0601
+DBG CPU.TIMING; start -> 1758.759784 s; elapsed -> 0.000128
+=== Chunk CPU: 4 BEGIN: 29940 TH: 12.2371
+11.2253
+29948 : 4
+<CPU> ROWS --- begin: 29944; end: 29948
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29948, 29952 : 4
+<CPU> ROWS --- begin: 29948; end: 29952
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29952, 29956 : 4
+<CPU> ROWS --- begin: 29952; end: 29956
+DBG CPU.TIMING; start -> 1758.760397 s; elapsed -> 0.000138
+=== Chunk CPU: 4 BEGIN: 29944 TH: DBG CPU.TIMING; start -> 1758.760475 s; elapsed -> 0.000120
+=== Chunk CPU: 4 BEGIN: BUNDLE CPU: TYPE[020.0581
+DBG CPU.TIMING; start -> 1758.760562 s; elapsed -> 0.000132
+=== Chunk CPU: 4 BEGIN: 29952 TH: 29948 TH: 20.556
+21.6592
+] Begin,End:Size = 29956, 29957 : 1
+<CPU> ROWS --- begin: 29956; end: 29957
+DBG CPU.TIMING; start -> 1758.761020 s; elapsed -> 0.000250
+=== Chunk CPU: 1 BEGIN: 29956 TH: 3.59429
+DBG 4.4.5;
+DBG 4.4.6;
+DBG 3.4.TIMING; start -> 1758.758074 s; elapsed -> 1.180978
+=== Chunk GPU[4]: 29924 BEGIN: 0 TH: 25.3356 it: 0
+DBG 5
++--------------------+
+| POWER MEASUREMENTS |
++--------------------+
+** Processing System Domain rails ********** 
+    VCCPSINTFP =    1.369 J     VCCPSINTLP =    0.297 J       VCCPSAUX =    0.297 J 
+      VCCPSPLL =    0.297 J       MGTRAVCC =    0.089 J       MGTRAVTT =    0.034 J 
+VCCO_PSDDR_504 =    0.357 J         VCCOPS =    0.357 J        VCCOPS3 =    0.357 J 
+   VCCPSDDRPLL =    0.059 J 
+
+** Programmable Logic Domain rails ***********
+        VCCINT =    1.653 J        VCCBRAM =    0.059 J 
+        VCCAUX =    0.445 J         VCC1V2 =    0.059 J         VCC3V3 =    0.148 J 
+      VADJ_FMC =    0.148 J        MGTAVCC =    0.057 J        MGTAVTT =    0.057 J 
+
+
+Processing System Domain ENERGY = 3.510791 J
+Programmable Logic Domain ENERGY = 2.626186 J
+TOTAL ENERGY = 6.136977 J
+
+Processing System Domain POWER = 2.910548 W
+Programmable Logic Domain POWER = 2.177184 W
+TOTAL POWER = 5.087732 W
+
+CLOCK_REALTIME = 1.206230 sec
+# of samples: 23
+sample every (real) = 0.052445 sec
+sample every: 0.050000 sec
+TIEMPO TOTAL: 1203.44
+DBG 6
+DBG 7
+DBG 8
+Closing driver: /dev/intgendriver1
+Closing driver: /dev/intgendriver2
+Closing driver: /dev/intgendriver3
+Closing driver: /dev/intgendriver4
+DBG 9
+Final GPU Chunk: 7481
+Total n. rows : 29957
+Total n. rows on CPU: 33
+Total n. rows on FPGA: 29924
+Actual percentage of work offloaded to the FPGA: 99 

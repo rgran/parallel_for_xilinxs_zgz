@@ -1,0 +1,175 @@
+LCM: 1600
+ALING CHUNK SIZE: 4
+SPMM Simulation: matrices/mixtank_new.mtx, 4, 4
+Reading Matrix Input File
+Reading header
+Reading data
+Setting number of elements: 1995041
+Reading numbers from file
+Allocating buffers for host data
+nRows->29957 nElements->1995041
+Number of Rows: 29957
+NNZ: 1995041
+BEGIN CALIBRATE:
+STEP: 0
+Running Pipeline: 4 4 
+** FPGA thread: 3
+** FPGA thread: 2
+** FPGA thread: 1
+** FPGA thread: 0
+******** Checking ********* np: 4 mea: 0ref: 0 , 0 , 0.129158
+******** Checking ********* np: 4 mea: 1ref: 0 , 0.129158 , 0.25128
+******** Checking ********* np: 4 mea: 2ref: 0.131794 , 0.25128 , 0.49299
+******** Checking ********* np: 4 mea: 3ref: 0.256409 , 0.49299 , 0.87167
+******** Checking ********* np: 4 mea: 4ref: 0.503051 , 0.87167 , 1.81723
+******** Checking ********* np: 4 mea: 5ref: 0.889459 , 1.81723 , 3.71258
+******** Checking ********* np: 4 mea: 6ref: 1.85432 , 3.71258 , 6.69335
+******** Checking ********* np: 4 mea: 7ref: 3.78834 , 6.69335 , 10.8438
+******** Checking ********* np: 4 mea: 8ref: 6.82995 , 10.8438 , 15.8076
+STEP: 1
+Running Pipeline: 4 4 
+******** Checking ********* np: 4 mea: 10ref: 16.1302 , 0 , 34.0234
+******** Checking ********* np: 4 mea: 11ref: 0 , 34.0234 , 23.2379
+STEP: 2
+Running Pipeline: 4 4 
+******** Checking ********* np: 4 mea: 12ref: 34.7177 , 23.2379 , 20.6255
+STEP: 3
+Running Pipeline: 4 4 
+******** Checking ********* np: 4 mea: 14ref: 21.0464 , 0 , 24.8778
+******** Stable phase ********* np: 4 mea: 14
+  stopConditionModeOn  lastCPU: 1664 lastFPGA: 5824
+***** Concord Case => Begin: 0 end: 29957 chunkG 5824 chunkC 1664
+***** Concord Case => Begin: 5824 end: 29957 chunkG 5824 chunkC 1664
+***** Concord Case => Begin: 18304 end: 29957 chunkG 5824 chunkC 1664
+***** Concord Case => Begin: 24128 end: 29957 chunkG 5824 chunkC 1664
+***** Concord Case => Begin: 29952 end: 29957 chunkG 5824 chunkC 1664
+STEP: 4
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 572 lastFPGA: 6916
+***** Concord Case => Begin: 0 end: 29957 chunkG 6916 chunkC 572
+***** Concord Case => Begin: 7488 end: 29957 chunkG 6916 chunkC 572
+***** Concord Case => Begin: 14404 end: 29957 chunkG 6916 chunkC 572
+***** Concord Case => Begin: 22464 end: 29957 chunkG 6916 chunkC 572
+STEP: 5
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 860 lastFPGA: 6628
+***** Concord Case => Begin: 0 end: 29957 chunkG 6628 chunkC 860
+***** Concord Case => Begin: 10068 end: 29957 chunkG 6628 chunkC 860
+***** Concord Case => Begin: 16696 end: 29957 chunkG 6628 chunkC 860
+***** Concord Case => Begin: 23324 end: 29957 chunkG 6628 chunkC 860
+***** Concord Case => Begin: 29952 end: 29957 chunkG 6628 chunkC 860
+STEP: 6
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 524 lastFPGA: 6964
+***** Concord Case => Begin: 0 end: 29957 chunkG 6964 chunkC 524
+***** Concord Case => Begin: 6964 end: 29957 chunkG 6964 chunkC 524
+***** Concord Case => Begin: 13928 end: 29957 chunkG 6964 chunkC 524
+***** Concord Case => Begin: 21940 end: 29957 chunkG 6964 chunkC 524
+STEP: 7
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 904 lastFPGA: 6584
+***** Concord Case => Begin: 0 end: 29957 chunkG 6584 chunkC 904
+***** Concord Case => Begin: 6584 end: 29957 chunkG 6584 chunkC 904
+***** Concord Case => Begin: 16784 end: 29957 chunkG 6584 chunkC 904
+***** Concord Case => Begin: 23368 end: 29957 chunkG 6584 chunkC 904
+***** Concord Case => Begin: 29952 end: 29957 chunkG 6584 chunkC 904
+STEP: 8
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 708 lastFPGA: 6780
+***** Concord Case => Begin: 0 end: 29957 chunkG 6780 chunkC 708
+***** Concord Case => Begin: 7488 end: 29957 chunkG 6780 chunkC 708
+***** Concord Case => Begin: 14268 end: 29957 chunkG 6780 chunkC 708
+***** Concord Case => Begin: 21756 end: 29957 chunkG 6780 chunkC 708
+STEP: 9
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 844 lastFPGA: 6644
+***** Concord Case => Begin: 0 end: 29957 chunkG 6644 chunkC 844
+***** Concord Case => Begin: 6644 end: 29957 chunkG 6644 chunkC 844
+***** Concord Case => Begin: 15820 end: 29957 chunkG 6644 chunkC 844
+***** Concord Case => Begin: 23308 end: 29957 chunkG 6644 chunkC 844
+***** Concord Case => Begin: 29952 end: 29957 chunkG 6644 chunkC 844
+STEP: 10
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 888 lastFPGA: 6600
+***** Concord Case => Begin: 0 end: 29957 chunkG 6600 chunkC 888
+***** Concord Case => Begin: 7488 end: 29957 chunkG 6600 chunkC 888
+***** Concord Case => Begin: 16752 end: 29957 chunkG 6600 chunkC 888
+***** Concord Case => Begin: 23352 end: 29957 chunkG 6600 chunkC 888
+***** Concord Case => Begin: 29952 end: 29957 chunkG 6600 chunkC 888
+STEP: 11
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 660 lastFPGA: 6828
+***** Concord Case => Begin: 0 end: 29957 chunkG 6828 chunkC 660
+***** Concord Case => Begin: 6828 end: 29957 chunkG 6828 chunkC 660
+***** Concord Case => Begin: 13656 end: 29957 chunkG 6828 chunkC 660
+***** Concord Case => Begin: 20484 end: 29957 chunkG 6828 chunkC 660
+STEP: 12
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 1232 lastFPGA: 6256
+***** Concord Case => Begin: 0 end: 29957 chunkG 6256 chunkC 1232
+***** Concord Case => Begin: 6256 end: 29957 chunkG 6256 chunkC 1232
+***** Concord Case => Begin: 13744 end: 29957 chunkG 6256 chunkC 1232
+***** Concord Case => Begin: 23696 end: 29957 chunkG 6256 chunkC 1232
+***** Concord Case => Begin: 29952 end: 29957 chunkG 6256 chunkC 1232
+STEP: 13
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 928 lastFPGA: 6560
+***** Concord Case => Begin: 0 end: 29957 chunkG 6560 chunkC 928
+***** Concord Case => Begin: 6560 end: 29957 chunkG 6560 chunkC 928
+***** Concord Case => Begin: 13120 end: 29957 chunkG 6560 chunkC 928
+***** Concord Case => Begin: 21536 end: 29957 chunkG 6560 chunkC 928
+***** Concord Case => Begin: 29952 end: 29957 chunkG 6560 chunkC 928
+STEP: 14
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 780 lastFPGA: 6708
+***** Concord Case => Begin: 0 end: 29957 chunkG 6708 chunkC 780
+***** Concord Case => Begin: 6708 end: 29957 chunkG 6708 chunkC 780
+***** Concord Case => Begin: 15756 end: 29957 chunkG 6708 chunkC 780
+***** Concord Case => Begin: 22464 end: 29957 chunkG 6708 chunkC 780
+***** Concord Case => Begin: 29952 end: 29957 chunkG 6708 chunkC 780
+BEGIN FINALRUN
+starting time energy
+Running Pipeline: 4 4 
+  stopConditionModeOn  lastCPU: 916 lastFPGA: 6572
+***** Concord Case => Begin: 0 end: 29957 chunkG 6572 chunkC 916
+***** Concord Case => Begin: 7488 end: 29957 chunkG 6572 chunkC 916
+***** Concord Case => Begin: 14060 end: 29957 chunkG 6572 chunkC 916
+***** Concord Case => Begin: 23380 end: 29957 chunkG 6572 chunkC 916
+***** Concord Case => Begin: 29952 end: 29957 chunkG 6572 chunkC 916
++--------------------+
+| POWER MEASUREMENTS |
++--------------------+
+** Full Power Domain rails ********** 
+    VCCPSINTFP =    0.758 J       MGTRAVCC =    0.036 J       MGTRAVTT =    0.016 J 
+VCCO_PSDDR_504 =    0.234 J    VCCPSDDRPLL =    0.024 J 
+
+** Low Power Domain rails ***********
+    VCCPSINTLP =    0.122 J 
+      VCCPSAUX =    0.000 J       VCCPSPLL =    0.024 J         VCCOPS =    0.000 J 
+       VCCOPS3 =    0.000 J 
+
+** Programmable Logic Domain rails ***********
+        VCCINT =    0.765 J        VCCBRAM =    0.024 J 
+        VCCAUX =    0.182 J         VCC1V2 =    0.024 J         VCC3V3 =    0.061 J 
+       MGTAVCC =    0.000 J        MGTAVTT =    0.022 J 
+
+Full Power Domain ENERGY        = 1.069384 J
+Low Power Domain ENERGY         = 0.145882 J
+Programmable Logic Domain ENERGY = 1.079005 J
+TOTAL ENERGY                    = 2.294271 J
+
+Full Power Domain POWER         = 2.135004 W
+Low Power Domain POWER          = 0.291250 W
+Programmable Logic Domain POWER = 2.154212 W
+TOTAL POWER                     = 4.580466 W
+
+CLOCK_REALTIME = 0.500882 sec
+# of samples: 9
+sample every (real) = 0.055654 sec
+sample every: 0.050000 sec
+TIEMPO TOTAL: 496.168
+Final GPU Chunk: 5589
+Total n. rows : 29041
+Total n. rows on CPU: 2753
+Total n. rows on FPGA: 26288
+Actual percentage of work offloaded to the FPGA: 90 

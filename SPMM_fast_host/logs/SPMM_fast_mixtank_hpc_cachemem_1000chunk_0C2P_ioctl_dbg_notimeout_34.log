@@ -1,0 +1,602 @@
+SPMM Simulation: mixtank_new.mtx, 0, 2
+Reading Matrix Input File
+Reading header
+Reading data
+Setting number of elements: 1995041
+Reading numbers from file
+Allocating buffers for host data
+nRows->29957 nElements->1995041
+Host sds_alloc sucess (input matrix)
+Host sds_alloc sucess (output matrix)
+Number of Rows: 29957
+NNZ: 1995041
+DBG0
+DBG2
+DBG5
+Driver successfully opened: /dev/intgendriver1
+Driver successfully opened: /dev/intgendriver2
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 957
+TOTAL TIME: 3330.45 ms
+Closing driver: /dev/intgendriver1
+Closing driver: /dev/intgendriver2
+Total n. rows : 29957
+Total n. rows on CPU: 0
+Total n. rows on FPGA: 29957
+Actual percentage of work offloaded to the FPGA:100% 
+[ 1778.585006] intgendriver1 open and ready
+[ 1778.585012] Reg0 at 8061000
+[ 1778.585015] Reg0 set at 0
+[ 1778.585017] WaitQueue flag set at 0
+[ 1778.585026] intgendriver2 open and ready
+[ 1778.585028] Reg0 at 9165000
+[ 1778.585030] Reg0 set at 0
+[ 1778.585032] WaitQueue flag set at 0
+[ 1786.175134] Process 5206 (SPMM) is going to sleep!
+[ 1786.175140] Reg0 at 9165000
+[ 1786.175142] Reg0 set at 0
+[ 1786.175143] WaitQueue flag set at 0
+[ 1786.175145] intgendriver2, workload size set at 1000
+[ 1786.175454] Process 5209 (SPMM) is going to sleep!
+[ 1786.175456] Reg0 at 8061000
+[ 1786.175458] Reg0 set at 0
+[ 1786.175460] WaitQueue flag set at 0
+[ 1786.175462] intgendriver1, workload size set at 1000
+[ 1786.430405] Interrupt: 55 received!
+[ 1786.430407] Reg0 at 9165000
+[ 1786.430409] Reg0 set at 1
+[ 1786.430411] Reg0 reset at 0
+[ 1786.430413] WaitQueue flag set at 0
+[ 1786.430415] WaitQueue flag updated at 1
+[ 1786.430416] Waking up process ...
+[ 1786.430426] Process 5206 (SPMM) awoken!
+[ 1786.430428] Reg0 at 9165000
+[ 1786.430430] Reg0 set at 0
+[ 1786.430431] WaitQueue flag set at 1
+[ 1786.430438] intgendriver2, workload size was 1000
+[ 1786.430448] WaitQueue flag reset at 0
+[ 1786.430479] Process 5206 (SPMM) is going to sleep!
+[ 1786.430481] Reg0 at 9165000
+[ 1786.430482] Reg0 set at 0
+[ 1786.430484] WaitQueue flag set at 0
+[ 1786.430486] intgendriver2, workload size set at 1000
+[ 1786.443033] Interrupt: 54 received!
+[ 1786.443035] Reg0 at 8061000
+[ 1786.443037] Reg0 set at 1
+[ 1786.443039] Reg0 reset at 0
+[ 1786.443041] WaitQueue flag set at 0
+[ 1786.443043] WaitQueue flag updated at 1
+[ 1786.443044] Waking up process ...
+[ 1786.443054] Process 5209 (SPMM) awoken!
+[ 1786.443056] Reg0 at 8061000
+[ 1786.443058] Reg0 set at 0
+[ 1786.443059] WaitQueue flag set at 1
+[ 1786.443061] intgendriver1, workload size was 1000
+[ 1786.443063] WaitQueue flag reset at 0
+[ 1786.443081] Process 5209 (SPMM) is going to sleep!
+[ 1786.443083] Reg0 at 8061000
+[ 1786.443085] Reg0 set at 0
+[ 1786.443086] WaitQueue flag set at 0
+[ 1786.443088] intgendriver1, workload size set at 1000
+[ 1786.695359] Interrupt: 54 received!
+[ 1786.695361] Reg0 at 8061000
+[ 1786.695363] Reg0 set at 1
+[ 1786.695365] Reg0 reset at 0
+[ 1786.695367] WaitQueue flag set at 0
+[ 1786.695368] WaitQueue flag updated at 1
+[ 1786.695369] Waking up process ...
+[ 1786.695379] Process 5209 (SPMM) awoken!
+[ 1786.695381] Reg0 at 8061000
+[ 1786.695386] Reg0 set at 0
+[ 1786.695395] WaitQueue flag set at 1
+[ 1786.695403] intgendriver1, workload size was 1000
+[ 1786.695409] WaitQueue flag reset at 0
+[ 1786.695430] Process 5209 (SPMM) is going to sleep!
+[ 1786.695432] Reg0 at 8061000
+[ 1786.695433] Reg0 set at 0
+[ 1786.695435] WaitQueue flag set at 0
+[ 1786.695437] intgendriver1, workload size set at 1000
+[ 1786.700737] Interrupt: 55 received!
+[ 1786.700739] Reg0 at 9165000
+[ 1786.700741] Reg0 set at 1
+[ 1786.700743] Reg0 reset at 0
+[ 1786.700744] WaitQueue flag set at 0
+[ 1786.700746] WaitQueue flag updated at 1
+[ 1786.700747] Waking up process ...
+[ 1786.700756] Process 5206 (SPMM) awoken!
+[ 1786.700758] Reg0 at 9165000
+[ 1786.700760] Reg0 set at 0
+[ 1786.700761] WaitQueue flag set at 1
+[ 1786.700763] intgendriver2, workload size was 1000
+[ 1786.700764] WaitQueue flag reset at 0
+[ 1786.700779] Process 5206 (SPMM) is going to sleep!
+[ 1786.700781] Reg0 at 9165000
+[ 1786.700782] Reg0 set at 0
+[ 1786.700784] WaitQueue flag set at 0
+[ 1786.700786] intgendriver2, workload size set at 1000
+[ 1786.886830] Interrupt: 54 received!
+[ 1786.886832] Reg0 at 8061000
+[ 1786.886834] Reg0 set at 1
+[ 1786.886836] Reg0 reset at 0
+[ 1786.886837] WaitQueue flag set at 0
+[ 1786.886839] WaitQueue flag updated at 1
+[ 1786.886840] Waking up process ...
+[ 1786.886849] Process 5209 (SPMM) awoken!
+[ 1786.886851] Reg0 at 8061000
+[ 1786.886853] Reg0 set at 0
+[ 1786.886861] WaitQueue flag set at 1
+[ 1786.886871] intgendriver1, workload size was 1000
+[ 1786.886878] WaitQueue flag reset at 0
+[ 1786.886896] Process 5209 (SPMM) is going to sleep!
+[ 1786.886898] Reg0 at 8061000
+[ 1786.886900] Reg0 set at 0
+[ 1786.886901] WaitQueue flag set at 0
+[ 1786.886903] intgendriver1, workload size set at 1000
+[ 1786.900904] Interrupt: 55 received!
+[ 1786.900907] Reg0 at 9165000
+[ 1786.900909] Reg0 set at 1
+[ 1786.900911] Reg0 reset at 0
+[ 1786.900912] WaitQueue flag set at 0
+[ 1786.900914] WaitQueue flag updated at 1
+[ 1786.900915] Waking up process ...
+[ 1786.900923] Process 5206 (SPMM) awoken!
+[ 1786.900926] Reg0 at 9165000
+[ 1786.900927] Reg0 set at 0
+[ 1786.900936] WaitQueue flag set at 1
+[ 1786.900945] intgendriver2, workload size was 1000
+[ 1786.900952] WaitQueue flag reset at 0
+[ 1786.900976] Process 5206 (SPMM) is going to sleep!
+[ 1786.900978] Reg0 at 9165000
+[ 1786.900980] Reg0 set at 0
+[ 1786.900981] WaitQueue flag set at 0
+[ 1786.900983] intgendriver2, workload size set at 1000
+[ 1787.086643] Interrupt: 54 received!
+[ 1787.086645] Reg0 at 8061000
+[ 1787.086647] Reg0 set at 1
+[ 1787.086649] Reg0 reset at 0
+[ 1787.086651] WaitQueue flag set at 0
+[ 1787.086652] WaitQueue flag updated at 1
+[ 1787.086653] Waking up process ...
+[ 1787.086663] Process 5209 (SPMM) awoken!
+[ 1787.086665] Reg0 at 8061000
+[ 1787.086670] Reg0 set at 0
+[ 1787.086677] WaitQueue flag set at 1
+[ 1787.086687] intgendriver1, workload size was 1000
+[ 1787.086694] WaitQueue flag reset at 0
+[ 1787.086713] Process 5209 (SPMM) is going to sleep!
+[ 1787.086715] Reg0 at 8061000
+[ 1787.086716] Reg0 set at 0
+[ 1787.086718] WaitQueue flag set at 0
+[ 1787.086719] intgendriver1, workload size set at 1000
+[ 1787.101674] Interrupt: 55 received!
+[ 1787.101676] Reg0 at 9165000
+[ 1787.101678] Reg0 set at 1
+[ 1787.101680] Reg0 reset at 0
+[ 1787.101681] WaitQueue flag set at 0
+[ 1787.101683] WaitQueue flag updated at 1
+[ 1787.101684] Waking up process ...
+[ 1787.101692] Process 5206 (SPMM) awoken!
+[ 1787.101695] Reg0 at 9165000
+[ 1787.101697] Reg0 set at 0
+[ 1787.101705] WaitQueue flag set at 1
+[ 1787.101714] intgendriver2, workload size was 1000
+[ 1787.101721] WaitQueue flag reset at 0
+[ 1787.101745] Process 5206 (SPMM) is going to sleep!
+[ 1787.101747] Reg0 at 9165000
+[ 1787.101748] Reg0 set at 0
+[ 1787.101750] WaitQueue flag set at 0
+[ 1787.101752] intgendriver2, workload size set at 1000
+[ 1787.334578] Interrupt: 54 received!
+[ 1787.334581] Reg0 at 8061000
+[ 1787.334582] Reg0 set at 1
+[ 1787.334584] Reg0 reset at 0
+[ 1787.334586] WaitQueue flag set at 0
+[ 1787.334587] WaitQueue flag updated at 1
+[ 1787.334589] Waking up process ...
+[ 1787.334598] Process 5209 (SPMM) awoken!
+[ 1787.334600] Reg0 at 8061000
+[ 1787.334602] Reg0 set at 0
+[ 1787.334603] WaitQueue flag set at 1
+[ 1787.334612] intgendriver1, workload size was 1000
+[ 1787.334621] WaitQueue flag reset at 0
+[ 1787.334640] Process 5209 (SPMM) is going to sleep!
+[ 1787.334642] Reg0 at 8061000
+[ 1787.334643] Reg0 set at 0
+[ 1787.334645] WaitQueue flag set at 0
+[ 1787.334646] intgendriver1, workload size set at 1000
+[ 1787.369212] Interrupt: 55 received!
+[ 1787.369214] Reg0 at 9165000
+[ 1787.369216] Reg0 set at 1
+[ 1787.369218] Reg0 reset at 0
+[ 1787.369219] WaitQueue flag set at 0
+[ 1787.369221] WaitQueue flag updated at 1
+[ 1787.369222] Waking up process ...
+[ 1787.369232] Process 5206 (SPMM) awoken!
+[ 1787.369234] Reg0 at 9165000
+[ 1787.369242] Reg0 set at 0
+[ 1787.369252] WaitQueue flag set at 1
+[ 1787.369259] intgendriver2, workload size was 1000
+[ 1787.369266] WaitQueue flag reset at 0
+[ 1787.369461] Process 5206 (SPMM) is going to sleep!
+[ 1787.369463] Reg0 at 9165000
+[ 1787.369465] Reg0 set at 0
+[ 1787.369466] WaitQueue flag set at 0
+[ 1787.369468] intgendriver2, workload size set at 1000
+[ 1787.603122] Interrupt: 54 received!
+[ 1787.603124] Reg0 at 8061000
+[ 1787.603126] Reg0 set at 1
+[ 1787.603128] Reg0 reset at 0
+[ 1787.603130] WaitQueue flag set at 0
+[ 1787.603131] WaitQueue flag updated at 1
+[ 1787.603132] Waking up process ...
+[ 1787.603142] Process 5209 (SPMM) awoken!
+[ 1787.603144] Reg0 at 8061000
+[ 1787.603145] Reg0 set at 0
+[ 1787.603153] WaitQueue flag set at 1
+[ 1787.603163] intgendriver1, workload size was 1000
+[ 1787.603170] WaitQueue flag reset at 0
+[ 1787.603188] Process 5209 (SPMM) is going to sleep!
+[ 1787.603190] Reg0 at 8061000
+[ 1787.603191] Reg0 set at 0
+[ 1787.603193] WaitQueue flag set at 0
+[ 1787.603195] intgendriver1, workload size set at 1000
+[ 1787.631008] Interrupt: 55 received!
+[ 1787.631011] Reg0 at 9165000
+[ 1787.631012] Reg0 set at 1
+[ 1787.631014] Reg0 reset at 0
+[ 1787.631016] WaitQueue flag set at 0
+[ 1787.631017] WaitQueue flag updated at 1
+[ 1787.631019] Waking up process ...
+[ 1787.631029] Process 5206 (SPMM) awoken!
+[ 1787.631031] Reg0 at 9165000
+[ 1787.631039] Reg0 set at 0
+[ 1787.631049] WaitQueue flag set at 1
+[ 1787.631056] intgendriver2, workload size was 1000
+[ 1787.631063] WaitQueue flag reset at 0
+[ 1787.631264] Process 5206 (SPMM) is going to sleep!
+[ 1787.631266] Reg0 at 9165000
+[ 1787.631268] Reg0 set at 0
+[ 1787.631269] WaitQueue flag set at 0
+[ 1787.631271] intgendriver2, workload size set at 1000
+[ 1787.795311] Interrupt: 54 received!
+[ 1787.795313] Reg0 at 8061000
+[ 1787.795315] Reg0 set at 1
+[ 1787.795317] Reg0 reset at 0
+[ 1787.795319] WaitQueue flag set at 0
+[ 1787.795320] WaitQueue flag updated at 1
+[ 1787.795322] Waking up process ...
+[ 1787.795331] Process 5209 (SPMM) awoken!
+[ 1787.795333] Reg0 at 8061000
+[ 1787.795335] Reg0 set at 0
+[ 1787.795343] WaitQueue flag set at 1
+[ 1787.795353] intgendriver1, workload size was 1000
+[ 1787.795359] WaitQueue flag reset at 0
+[ 1787.795378] Process 5209 (SPMM) is going to sleep!
+[ 1787.795380] Reg0 at 8061000
+[ 1787.795381] Reg0 set at 0
+[ 1787.795383] WaitQueue flag set at 0
+[ 1787.795385] intgendriver1, workload size set at 1000
+[ 1787.829290] Interrupt: 55 received!
+[ 1787.829292] Reg0 at 9165000
+[ 1787.829294] Reg0 set at 1
+[ 1787.829296] Reg0 reset at 0
+[ 1787.829297] WaitQueue flag set at 0
+[ 1787.829299] WaitQueue flag updated at 1
+[ 1787.829300] Waking up process ...
+[ 1787.829310] Process 5206 (SPMM) awoken!
+[ 1787.829312] Reg0 at 9165000
+[ 1787.829320] Reg0 set at 0
+[ 1787.829330] WaitQueue flag set at 1
+[ 1787.829337] intgendriver2, workload size was 1000
+[ 1787.829344] WaitQueue flag reset at 0
+[ 1787.829584] Process 5206 (SPMM) is going to sleep!
+[ 1787.829586] Reg0 at 9165000
+[ 1787.829587] Reg0 set at 0
+[ 1787.829589] WaitQueue flag set at 0
+[ 1787.829591] intgendriver2, workload size set at 1000
+[ 1787.995268] Interrupt: 54 received!
+[ 1787.995270] Reg0 at 8061000
+[ 1787.995272] Reg0 set at 1
+[ 1787.995274] Reg0 reset at 0
+[ 1787.995276] WaitQueue flag set at 0
+[ 1787.995277] WaitQueue flag updated at 1
+[ 1787.995279] Waking up process ...
+[ 1787.995288] Process 5209 (SPMM) awoken!
+[ 1787.995290] Reg0 at 8061000
+[ 1787.995292] Reg0 set at 0
+[ 1787.995300] WaitQueue flag set at 1
+[ 1787.995309] intgendriver1, workload size was 1000
+[ 1787.995316] WaitQueue flag reset at 0
+[ 1787.995335] Process 5209 (SPMM) is going to sleep!
+[ 1787.995336] Reg0 at 8061000
+[ 1787.995338] Reg0 set at 0
+[ 1787.995340] WaitQueue flag set at 0
+[ 1787.995341] intgendriver1, workload size set at 1000
+[ 1788.031296] Interrupt: 55 received!
+[ 1788.031299] Reg0 at 9165000
+[ 1788.031301] Reg0 set at 1
+[ 1788.031302] Reg0 reset at 0
+[ 1788.031304] WaitQueue flag set at 0
+[ 1788.031305] WaitQueue flag updated at 1
+[ 1788.031307] Waking up process ...
+[ 1788.031317] Process 5206 (SPMM) awoken!
+[ 1788.031319] Reg0 at 9165000
+[ 1788.031327] Reg0 set at 0
+[ 1788.031337] WaitQueue flag set at 1
+[ 1788.031344] intgendriver2, workload size was 1000
+[ 1788.031350] WaitQueue flag reset at 0
+[ 1788.031544] Process 5206 (SPMM) is going to sleep!
+[ 1788.031546] Reg0 at 9165000
+[ 1788.031548] Reg0 set at 0
+[ 1788.031550] WaitQueue flag set at 0
+[ 1788.031552] intgendriver2, workload size set at 1000
+[ 1788.238452] Interrupt: 54 received!
+[ 1788.238454] Reg0 at 8061000
+[ 1788.238456] Reg0 set at 1
+[ 1788.238458] Reg0 reset at 0
+[ 1788.238460] WaitQueue flag set at 0
+[ 1788.238461] WaitQueue flag updated at 1
+[ 1788.238462] Waking up process ...
+[ 1788.238472] Process 5209 (SPMM) awoken!
+[ 1788.238474] Reg0 at 8061000
+[ 1788.238475] Reg0 set at 0
+[ 1788.238484] WaitQueue flag set at 1
+[ 1788.238493] intgendriver1, workload size was 1000
+[ 1788.238500] WaitQueue flag reset at 0
+[ 1788.238519] Process 5209 (SPMM) is going to sleep!
+[ 1788.238520] Reg0 at 8061000
+[ 1788.238522] Reg0 set at 0
+[ 1788.238524] WaitQueue flag set at 0
+[ 1788.238525] intgendriver1, workload size set at 1000
+[ 1788.298264] Interrupt: 55 received!
+[ 1788.298267] Reg0 at 9165000
+[ 1788.298269] Reg0 set at 1
+[ 1788.298271] Reg0 reset at 0
+[ 1788.298272] WaitQueue flag set at 0
+[ 1788.298274] WaitQueue flag updated at 1
+[ 1788.298275] Waking up process ...
+[ 1788.298285] Process 5206 (SPMM) awoken!
+[ 1788.298288] Reg0 at 9165000
+[ 1788.298296] Reg0 set at 0
+[ 1788.298305] WaitQueue flag set at 1
+[ 1788.298312] intgendriver2, workload size was 1000
+[ 1788.298319] WaitQueue flag reset at 0
+[ 1788.298515] Process 5206 (SPMM) is going to sleep!
+[ 1788.298517] Reg0 at 9165000
+[ 1788.298519] Reg0 set at 0
+[ 1788.298520] WaitQueue flag set at 0
+[ 1788.298522] intgendriver2, workload size set at 1000
+[ 1788.508290] Interrupt: 54 received!
+[ 1788.508292] Reg0 at 8061000
+[ 1788.508294] Reg0 set at 1
+[ 1788.508296] Reg0 reset at 0
+[ 1788.508298] WaitQueue flag set at 0
+[ 1788.508299] WaitQueue flag updated at 1
+[ 1788.508301] Waking up process ...
+[ 1788.508310] Process 5209 (SPMM) awoken!
+[ 1788.508312] Reg0 at 8061000
+[ 1788.508313] Reg0 set at 0
+[ 1788.508315] WaitQueue flag set at 1
+[ 1788.508323] intgendriver1, workload size was 1000
+[ 1788.508333] WaitQueue flag reset at 0
+[ 1788.508351] Process 5209 (SPMM) is going to sleep!
+[ 1788.508353] Reg0 at 8061000
+[ 1788.508354] Reg0 set at 0
+[ 1788.508356] WaitQueue flag set at 0
+[ 1788.508357] intgendriver1, workload size set at 1000
+[ 1788.564155] Interrupt: 55 received!
+[ 1788.564157] Reg0 at 9165000
+[ 1788.564159] Reg0 set at 1
+[ 1788.564161] Reg0 reset at 0
+[ 1788.564162] WaitQueue flag set at 0
+[ 1788.564164] WaitQueue flag updated at 1
+[ 1788.564165] Waking up process ...
+[ 1788.564175] Process 5206 (SPMM) awoken!
+[ 1788.564177] Reg0 at 9165000
+[ 1788.564183] Reg0 set at 0
+[ 1788.564193] WaitQueue flag set at 1
+[ 1788.564200] intgendriver2, workload size was 1000
+[ 1788.564207] WaitQueue flag reset at 0
+[ 1788.564227] Process 5206 (SPMM) is going to sleep!
+[ 1788.564229] Reg0 at 9165000
+[ 1788.564231] Reg0 set at 0
+[ 1788.564232] WaitQueue flag set at 0
+[ 1788.564234] intgendriver2, workload size set at 1000
+[ 1788.702933] Interrupt: 54 received!
+[ 1788.702935] Reg0 at 8061000
+[ 1788.702937] Reg0 set at 1
+[ 1788.702940] Reg0 reset at 0
+[ 1788.702941] WaitQueue flag set at 0
+[ 1788.702943] WaitQueue flag updated at 1
+[ 1788.702944] Waking up process ...
+[ 1788.702953] Process 5209 (SPMM) awoken!
+[ 1788.702955] Reg0 at 8061000
+[ 1788.702957] Reg0 set at 0
+[ 1788.702965] WaitQueue flag set at 1
+[ 1788.702975] intgendriver1, workload size was 1000
+[ 1788.702982] WaitQueue flag reset at 0
+[ 1788.703000] Process 5209 (SPMM) is going to sleep!
+[ 1788.703001] Reg0 at 8061000
+[ 1788.703003] Reg0 set at 0
+[ 1788.703005] WaitQueue flag set at 0
+[ 1788.703006] intgendriver1, workload size set at 1000
+[ 1788.764363] Interrupt: 55 received!
+[ 1788.764365] Reg0 at 9165000
+[ 1788.764367] Reg0 set at 1
+[ 1788.764369] Reg0 reset at 0
+[ 1788.764371] WaitQueue flag set at 0
+[ 1788.764372] WaitQueue flag updated at 1
+[ 1788.764373] Waking up process ...
+[ 1788.764383] Process 5206 (SPMM) awoken!
+[ 1788.764385] Reg0 at 9165000
+[ 1788.764390] Reg0 set at 0
+[ 1788.764397] WaitQueue flag set at 1
+[ 1788.764407] intgendriver2, workload size was 1000
+[ 1788.764413] WaitQueue flag reset at 0
+[ 1788.764432] Process 5206 (SPMM) is going to sleep!
+[ 1788.764434] Reg0 at 9165000
+[ 1788.764436] Reg0 set at 0
+[ 1788.764437] WaitQueue flag set at 0
+[ 1788.764439] intgendriver2, workload size set at 1000
+[ 1788.903955] Interrupt: 54 received!
+[ 1788.903957] Reg0 at 8061000
+[ 1788.903959] Reg0 set at 1
+[ 1788.903961] Reg0 reset at 0
+[ 1788.903963] WaitQueue flag set at 0
+[ 1788.903964] WaitQueue flag updated at 1
+[ 1788.903966] Waking up process ...
+[ 1788.903976] Process 5209 (SPMM) awoken!
+[ 1788.903986] Reg0 at 8061000
+[ 1788.903993] Reg0 set at 0
+[ 1788.904000] WaitQueue flag set at 1
+[ 1788.904005] intgendriver1, workload size was 1000
+[ 1788.904006] WaitQueue flag reset at 0
+[ 1788.904025] Process 5209 (SPMM) is going to sleep!
+[ 1788.904027] Reg0 at 8061000
+[ 1788.904028] Reg0 set at 0
+[ 1788.904030] WaitQueue flag set at 0
+[ 1788.904032] intgendriver1, workload size set at 1000
+[ 1788.965115] Interrupt: 55 received!
+[ 1788.965118] Reg0 at 9165000
+[ 1788.965119] Reg0 set at 1
+[ 1788.965121] Reg0 reset at 0
+[ 1788.965123] WaitQueue flag set at 0
+[ 1788.965124] WaitQueue flag updated at 1
+[ 1788.965125] Waking up process ...
+[ 1788.965136] Process 5206 (SPMM) awoken!
+[ 1788.965138] Reg0 at 9165000
+[ 1788.965144] Reg0 set at 0
+[ 1788.965153] WaitQueue flag set at 1
+[ 1788.965161] intgendriver2, workload size was 1000
+[ 1788.965167] WaitQueue flag reset at 0
+[ 1788.965187] Process 5206 (SPMM) is going to sleep!
+[ 1788.965189] Reg0 at 9165000
+[ 1788.965191] Reg0 set at 0
+[ 1788.965192] WaitQueue flag set at 0
+[ 1788.965194] intgendriver2, workload size set at 1000
+[ 1789.107501] Interrupt: 54 received!
+[ 1789.107503] Reg0 at 8061000
+[ 1789.107505] Reg0 set at 1
+[ 1789.107507] Reg0 reset at 0
+[ 1789.107509] WaitQueue flag set at 0
+[ 1789.107511] WaitQueue flag updated at 1
+[ 1789.107512] Waking up process ...
+[ 1789.107523] Process 5209 (SPMM) awoken!
+[ 1789.107530] Reg0 at 8061000
+[ 1789.107537] Reg0 set at 0
+[ 1789.107544] WaitQueue flag set at 1
+[ 1789.107551] intgendriver1, workload size was 1000
+[ 1789.107554] WaitQueue flag reset at 0
+[ 1789.107572] Process 5209 (SPMM) is going to sleep!
+[ 1789.107574] Reg0 at 8061000
+[ 1789.107575] Reg0 set at 0
+[ 1789.107577] WaitQueue flag set at 0
+[ 1789.107579] intgendriver1, workload size set at 1000
+[ 1789.146347] Interrupt: 55 received!
+[ 1789.146349] Reg0 at 9165000
+[ 1789.146351] Reg0 set at 1
+[ 1789.146353] Reg0 reset at 0
+[ 1789.146354] WaitQueue flag set at 0
+[ 1789.146356] WaitQueue flag updated at 1
+[ 1789.146357] Waking up process ...
+[ 1789.146367] Process 5206 (SPMM) awoken!
+[ 1789.146368] Reg0 at 9165000
+[ 1789.146370] Reg0 set at 0
+[ 1789.146378] WaitQueue flag set at 1
+[ 1789.146388] intgendriver2, workload size was 1000
+[ 1789.146394] WaitQueue flag reset at 0
+[ 1789.146413] Process 5206 (SPMM) is going to sleep!
+[ 1789.146415] Reg0 at 9165000
+[ 1789.146417] Reg0 set at 0
+[ 1789.146418] WaitQueue flag set at 0
+[ 1789.146420] intgendriver2, workload size set at 1000
+[ 1789.287114] Interrupt: 54 received!
+[ 1789.287117] Reg0 at 8061000
+[ 1789.287119] Reg0 set at 1
+[ 1789.287121] Reg0 reset at 0
+[ 1789.287122] WaitQueue flag set at 0
+[ 1789.287124] WaitQueue flag updated at 1
+[ 1789.287125] Waking up process ...
+[ 1789.287135] Process 5209 (SPMM) awoken!
+[ 1789.287144] Reg0 at 8061000
+[ 1789.287151] Reg0 set at 0
+[ 1789.287158] WaitQueue flag set at 1
+[ 1789.287165] intgendriver1, workload size was 1000
+[ 1789.287168] WaitQueue flag reset at 0
+[ 1789.287186] Process 5209 (SPMM) is going to sleep!
+[ 1789.287187] Reg0 at 8061000
+[ 1789.287189] Reg0 set at 0
+[ 1789.287191] WaitQueue flag set at 0
+[ 1789.287192] intgendriver1, workload size set at 1000
+[ 1789.326196] Interrupt: 55 received!
+[ 1789.326198] Reg0 at 9165000
+[ 1789.326200] Reg0 set at 1
+[ 1789.326202] Reg0 reset at 0
+[ 1789.326204] WaitQueue flag set at 0
+[ 1789.326205] WaitQueue flag updated at 1
+[ 1789.326207] Waking up process ...
+[ 1789.326216] Process 5206 (SPMM) awoken!
+[ 1789.326218] Reg0 at 9165000
+[ 1789.326223] Reg0 set at 0
+[ 1789.326232] WaitQueue flag set at 1
+[ 1789.326240] intgendriver2, workload size was 1000
+[ 1789.326246] WaitQueue flag reset at 0
+[ 1789.326265] Process 5206 (SPMM) is going to sleep!
+[ 1789.326267] Reg0 at 9165000
+[ 1789.326268] Reg0 set at 0
+[ 1789.326270] WaitQueue flag set at 0
+[ 1789.326272] intgendriver2, workload size set at 957
+[ 1789.467707] Interrupt: 54 received!
+[ 1789.467709] Reg0 at 8061000
+[ 1789.467711] Reg0 set at 1
+[ 1789.467713] Reg0 reset at 0
+[ 1789.467715] WaitQueue flag set at 0
+[ 1789.467716] WaitQueue flag updated at 1
+[ 1789.467717] Waking up process ...
+[ 1789.467727] Process 5209 (SPMM) awoken!
+[ 1789.467734] Reg0 at 8061000
+[ 1789.467741] Reg0 set at 0
+[ 1789.467748] WaitQueue flag set at 1
+[ 1789.467755] intgendriver1, workload size was 1000
+[ 1789.467761] WaitQueue flag reset at 0
+[ 1789.505282] Interrupt: 55 received!
+[ 1789.505285] Reg0 at 9165000
+[ 1789.505286] Reg0 set at 1
+[ 1789.505288] Reg0 reset at 0
+[ 1789.505290] WaitQueue flag set at 0
+[ 1789.505292] WaitQueue flag updated at 1
+[ 1789.505293] Waking up process ...
+[ 1789.505302] Process 5206 (SPMM) awoken!
+[ 1789.505304] Reg0 at 9165000
+[ 1789.505309] Reg0 set at 0
+[ 1789.505318] WaitQueue flag set at 1
+[ 1789.505325] intgendriver2, workload size was 957
+[ 1789.505332] WaitQueue flag reset at 0

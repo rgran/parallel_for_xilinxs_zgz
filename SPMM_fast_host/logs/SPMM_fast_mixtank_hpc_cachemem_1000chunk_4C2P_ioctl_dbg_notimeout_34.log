@@ -1,0 +1,108 @@
+SPMM Simulation: mixtank_new.mtx, 4, 2
+Reading Matrix Input File
+Reading header
+Reading data
+Setting number of elements: 1995041
+Reading numbers from file
+Allocating buffers for host data
+nRows->29957 nElements->1995041
+Host sds_alloc sucess (input matrix)
+Host sds_alloc sucess (output matrix)
+Number of Rows: 29957
+NNZ: 1995041
+DBG0
+DBG2
+DBG5
+Driver successfully opened: /dev/intgendriver1
+Driver successfully opened: /dev/intgendriver2
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+kernelspmm2, workload = 1000
+kernelspmm1, workload = 1000
+TOTAL TIME: 618.076 ms
+Closing driver: /dev/intgendriver1
+Closing driver: /dev/intgendriver2
+Total n. rows : 27792
+Total n. rows on CPU: 23792
+Total n. rows on FPGA: 4000
+Actual percentage of work offloaded to the FPGA:14% 
+[ 1826.930817] intgendriver1 open and ready
+[ 1826.930824] Reg0 at 8061000
+[ 1826.930827] Reg0 set at 0
+[ 1826.930829] WaitQueue flag set at 0
+[ 1826.930839] intgendriver2 open and ready
+[ 1826.930841] Reg0 at 9165000
+[ 1826.930843] Reg0 set at 0
+[ 1826.930844] WaitQueue flag set at 0
+[ 1834.528380] Process 5222 (SPMM) is going to sleep!
+[ 1834.528385] Reg0 at 9165000
+[ 1834.528387] Reg0 set at 0
+[ 1834.528389] WaitQueue flag set at 0
+[ 1834.528391] intgendriver2, workload size set at 1000
+[ 1834.535035] Process 5229 (SPMM) is going to sleep!
+[ 1834.535040] Reg0 at 8061000
+[ 1834.535042] Reg0 set at 0
+[ 1834.535044] WaitQueue flag set at 0
+[ 1834.535046] intgendriver1, workload size set at 1000
+[ 1834.783665] Interrupt: 55 received!
+[ 1834.783671] Reg0 at 9165000
+[ 1834.783673] Reg0 set at 1
+[ 1834.783675] Reg0 reset at 0
+[ 1834.783676] WaitQueue flag set at 0
+[ 1834.783678] WaitQueue flag updated at 1
+[ 1834.783679] Waking up process ...
+[ 1834.783696] Process 5222 (SPMM) awoken!
+[ 1834.783699] Reg0 at 9165000
+[ 1834.783701] Reg0 set at 0
+[ 1834.783703] WaitQueue flag set at 1
+[ 1834.783705] intgendriver2, workload size was 1000
+[ 1834.783706] WaitQueue flag reset at 0
+[ 1834.783767] Process 5222 (SPMM) is going to sleep!
+[ 1834.783769] Reg0 at 9165000
+[ 1834.783770] Reg0 set at 0
+[ 1834.783772] WaitQueue flag set at 0
+[ 1834.783774] intgendriver2, workload size set at 1000
+[ 1834.802640] Interrupt: 54 received!
+[ 1834.802646] Reg0 at 8061000
+[ 1834.802648] Reg0 set at 1
+[ 1834.802650] Reg0 reset at 0
+[ 1834.802652] WaitQueue flag set at 0
+[ 1834.802654] WaitQueue flag updated at 1
+[ 1834.802655] Waking up process ...
+[ 1834.802683] Process 5229 (SPMM) awoken!
+[ 1834.802684] Reg0 at 8061000
+[ 1834.802686] Reg0 set at 0
+[ 1834.802688] WaitQueue flag set at 1
+[ 1834.802690] intgendriver1, workload size was 1000
+[ 1834.802691] WaitQueue flag reset at 0
+[ 1834.802748] Process 5229 (SPMM) is going to sleep!
+[ 1834.802750] Reg0 at 8061000
+[ 1834.802752] Reg0 set at 0
+[ 1834.802753] WaitQueue flag set at 0
+[ 1834.802756] intgendriver1, workload size set at 1000
+[ 1834.976178] Interrupt: 55 received!
+[ 1834.976184] Reg0 at 9165000
+[ 1834.976186] Reg0 set at 1
+[ 1834.976188] Reg0 reset at 0
+[ 1834.976190] WaitQueue flag set at 0
+[ 1834.976191] WaitQueue flag updated at 1
+[ 1834.976193] Waking up process ...
+[ 1834.976222] Process 5222 (SPMM) awoken!
+[ 1834.976224] Reg0 at 9165000
+[ 1834.976226] Reg0 set at 0
+[ 1834.976227] WaitQueue flag set at 1
+[ 1834.976229] intgendriver2, workload size was 1000
+[ 1834.976231] WaitQueue flag reset at 0
+[ 1835.004215] Interrupt: 54 received!
+[ 1835.004220] Reg0 at 8061000
+[ 1835.004222] Reg0 set at 1
+[ 1835.004224] Reg0 reset at 0
+[ 1835.004226] WaitQueue flag set at 0
+[ 1835.004227] WaitQueue flag updated at 1
+[ 1835.004229] Waking up process ...
+[ 1835.004253] Process 5229 (SPMM) awoken!
+[ 1835.004254] Reg0 at 8061000
+[ 1835.004256] Reg0 set at 0
+[ 1835.004258] WaitQueue flag set at 1
+[ 1835.004259] intgendriver1, workload size was 1000
+[ 1835.004261] WaitQueue flag reset at 0

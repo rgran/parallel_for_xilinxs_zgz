@@ -1,0 +1,116 @@
+LCM: 1600
+ALING CHUNK SIZE: 4
+SPMM Simulation: matrices/mixtank_new.mtx, 4, 4
+Reading Matrix Input File
+Reading header
+Reading data
+Setting number of elements: 1995041
+Reading numbers from file
+Allocating buffers for host data
+nRows->29957 nElements->1995041
+Number of Rows: 29957
+NNZ: 1995041
+BEGIN CALIBRATE:
+STEP: 0
+Running Pipeline: 4 4 
+** FPGA thread: 3
+** FPGA thread: 2
+** FPGA thread: 1
+** FPGA thread: 0
+*** Checking FPGA[4] step: 0 chunk sizes: 0 , 0 , 4
+                     thr: 0 , 0 , 0.131788
+               decay thr: 0 , 0 , 0.129153
+FPGA[4] FILLED OK
+*** Checking FPGA[3] step: 1 chunk sizes: 0 , 4 , 8
+                     thr: 0 , 0.131788 , 0.253947
+               decay thr: 0 , 0.129153 , 0.248868
+FPGA[3] FILLED OK
+*** Checking FPGA[2] step: 2 chunk sizes: 4 , 8 , 16
+                     thr: 0.131788 , 0.253947 , 0.498036
+               decay thr: 0.131788 , 0.248868 , 0.488075
+FPGA[2] FILLED OK
+*** Checking FPGA[1] step: 3 chunk sizes: 8 , 16 , 32
+                     thr: 0.253947 , 0.498036 , 0.962591
+               decay thr: 0.253947 , 0.488075 , 0.943339
+FPGA[1] FILLED OK
+*** Checking FPGA[4] step: 4 chunk sizes: 16 , 32 , 64
+                     thr: 0.498036 , 0.962591 , 1.83711
+               decay thr: 0.498036 , 0.943339 , 1.80037
+FPGA[4] FILLED OK
+*** Checking FPGA[3] step: 5 chunk sizes: 32 , 64 , 128
+                     thr: 0.962591 , 1.83711 , 3.66561
+               decay thr: 0.962591 , 1.80037 , 3.59229
+FPGA[3] FILLED OK
+*** Checking FPGA[2] step: 6 chunk sizes: 64 , 128 , 256
+                     thr: 1.83711 , 3.66561 , 6.82905
+               decay thr: 1.83711 , 3.59229 , 6.69247
+FPGA[2] FILLED OK
+*** Checking FPGA[1] step: 7 chunk sizes: 128 , 256 , 512
+                     thr: 3.66561 , 6.82905 , 11.0357
+               decay thr: 3.66561 , 6.69247 , 10.8149
+FPGA[1] FILLED OK
+*** Checking FPGA[4] step: 8 chunk sizes: 256 , 512 , 1024
+                     thr: 6.82905 , 11.0357 , 16.0449
+               decay thr: 6.82905 , 10.8149 , 15.724
+FPGA[4] FILLED OK
+STEP: 1
+Running Pipeline: 4 4 
+*** Checking FPGA[3] step: 9 chunk sizes: 512 , 1024 , 2048
+                     thr: 11.0357 , 16.0449 , 21.4564
+               decay thr: 11.0357 , 15.724 , 21.0272
+FPGA[3] FILLED OK
+*** Checking FPGA[2] step: 10 chunk sizes: 1024 , 2048 , 4096
+                     thr: 16.0449 , 21.4564 , 36.2115
+               decay thr: 16.0449 , 21.0272 , 35.4873
+FPGA[2] FILLED OK
+STEP: 2
+Running Pipeline: 4 4 
+*** Checking FPGA[4] step: 12 chunk sizes: 4096 , 0 , 16384
+                     thr: 36.2115 , 0 , 22.1483
+               decay thr: 36.2115 , 0 , 21.7054
+STEP: 3
+Running Pipeline: 4 4 
+*** Checking FPGA[4] step: 14 chunk sizes: 16384 , 0 , 29957
+                     thr: 22.1483 , 0 , 25.3885
+               decay thr: 22.1483 , 0 , 24.8807
+******** Stable phase ********* np: 4 mea: 14
+BEGIN FINALRUN
+starting time energy
+Running Pipeline: 4 4 
+Calculate Chunk FPGA[4] chunk: 29956 step: 14 chunk sizes: 16384 , 0 , 29956
+                     thr: 22.1483 , 0 , 25.388
+  stopConditionModeOn Chunk FPGA= 29956 Begin = 29956, End = 29957 fg 31.229
+***** Concord Case - Active FPGAs= 4 > Begin: 29956 end: 29957
++--------------------+
+| POWER MEASUREMENTS |
++--------------------+
+** Processing System Domain rails ********** 
+    VCCPSINTFP =    1.385 J     VCCPSINTLP =    0.299 J       VCCPSAUX =    0.299 J 
+      VCCPSPLL =    0.299 J       MGTRAVCC =    0.090 J       MGTRAVTT =    0.038 J 
+VCCO_PSDDR_504 =    0.362 J         VCCOPS =    0.362 J        VCCOPS3 =    0.362 J 
+   VCCPSDDRPLL =    0.060 J 
+
+** Programmable Logic Domain rails ***********
+        VCCINT =    1.670 J        VCCBRAM =    0.060 J 
+        VCCAUX =    0.449 J         VCC1V2 =    0.060 J         VCC3V3 =    0.150 J 
+      VADJ_FMC =    0.150 J        MGTAVCC =    0.056 J        MGTAVTT =    0.056 J 
+
+
+Processing System Domain ENERGY = 3.556080 J
+Programmable Logic Domain ENERGY = 2.649915 J
+TOTAL ENERGY = 6.205996 J
+
+Processing System Domain POWER = 2.940621 W
+Programmable Logic Domain POWER = 2.191288 W
+TOTAL POWER = 5.131909 W
+
+CLOCK_REALTIME = 1.209296 sec
+# of samples: 23
+sample every (real) = 0.052578 sec
+sample every: 0.050000 sec
+TIEMPO TOTAL: 1206.48
+Final GPU Chunk: 7489
+Total n. rows : 29957
+Total n. rows on CPU: 1
+Total n. rows on FPGA: 29956
+Actual percentage of work offloaded to the FPGA: 99 

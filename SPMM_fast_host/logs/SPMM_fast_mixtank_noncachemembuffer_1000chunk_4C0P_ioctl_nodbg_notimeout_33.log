@@ -1,0 +1,32 @@
+SPMM Simulation: mixtank_new.mtx, 4, 0
+Reading Matrix Input File
+Reading header
+Reading data
+Setting number of elements: 1995041
+Reading numbers from file
+Allocating buffers for host data
+nRows->29957 nElements->1995041
+Host sds_alloc sucess (input matrix)
+Host sds_alloc_non_cacheable sucess (input matrix)
+numRows->29957 nItems->1995041
+Host sds_alloc sucess (output matrix)
+Host sds_alloc_non_cacheable sucess (output matrix)
+Number of Rows: 29957
+NNZ: 1995041
+Driver successfully opened: /dev/intgendriver1
+Driver successfully opened: /dev/intgendriver2
+Driver successfully opened: /dev/intgendriver3
+Driver successfully opened: /dev/intgendriver4
+TOTAL TIME: 695.386 ms
+Closing driver: /dev/intgendriver1
+Closing driver: /dev/intgendriver2
+Closing driver: /dev/intgendriver3
+Closing driver: /dev/intgendriver4
+Total n. rows : 24333
+Total n. rows on CPU: 24333
+Total n. rows on FPGA: 0
+Actual percentage of work offloaded to the FPGA:0% 
+[ 1563.919578] intgendriver1 open and ready
+[ 1563.919590] intgendriver2 open and ready
+[ 1563.919597] intgendriver3 open and ready
+[ 1563.919604] intgendriver4 open and ready

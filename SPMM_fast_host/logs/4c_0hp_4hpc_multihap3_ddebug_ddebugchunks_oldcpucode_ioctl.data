@@ -1,0 +1,600 @@
+LCM: 1600
+ALING CHUNK SIZE: 4
+SPMM Simulation: matrices/mixtank_new.mtx, 4, 4
+Reading Matrix Input File
+Reading header
+Reading data
+Setting number of elements: 1995041
+Reading numbers from file
+Allocating buffers for host data
+nRows->29957 nElements->1995041
+Number of Rows: 29957
+NNZ: 1995041
+BEGIN CALIBRATE:
+STEP: 0
+Running Pipeline: 4 4 
+** FPGA thread: 3
+ Filter FPGA[4] chunk: 4 Begin = 0, End = 29957 fg 1
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 0, 4 : 4
+** FPGA thread: 2
+ Filter FPGA[3] chunk: 8 Begin = 4, End = 29957 fg 1
+BUNDLE FPGA: TYPE[3] Begin,End:Size = 4, 12 : 8
+** FPGA thread: 1
+ Filter FPGA[2] chunk: 16 Begin = 12, End = 29957 fg 1
+BUNDLE FPGA: TYPE[2] Begin,End:Size = 12, 28 : 16
+** FPGA thread: 0
+ Filter FPGA[1] chunk: 32 Begin = 28, End = 29957 fg 1
+BUNDLE FPGA: TYPE[1] Begin,End:Size = 28, 60 : 32
+BUNDLE CPU: TYPE[0] Begin,End:Size = 60, 64 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 64, 68 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 68, 72 : 4
+=== Chunk CPU: 4 BEGIN: 60 TH: 5.99062
+BUNDLE CPU: TYPE[0] Begin,End:Size = 72, 76 : 4
+=== Chunk CPU: 4 BEGIN: 64 TH: 6.76497
+=== Chunk CPU: 4 BEGIN: 68 TH: BUNDLE CPU: TYPE[0] Begin,End:Size = 7.12976
+76, 80 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 80, 84 : 4
+=== Chunk CPU: 4 BEGIN: 72 TH: 9.60908
+BUNDLE CPU: TYPE[0] Begin,End:Size = 84, 88 : 4
+=== Chunk CPU: 4 BEGIN: 76 TH: === Chunk CPU: 8.96507
+BUNDLE CPU: TYPE[0] Begin,End:Size = 88, 92 : 4
+4 BEGIN: 80 TH: 9.7615
+BUNDLE CPU: TYPE[0] Begin,End:Size = 92, 96 : 4
+=== Chunk CPU: 4 BEGIN: 84 TH: 9.43209
+BUNDLE CPU: TYPE[0] Begin,End:Size = 96, 100 : 4
+=== Chunk CPU: 4 BEGIN: 88 TH: 7.81809
+BUNDLE CPU: TYPE[0] Begin,End:Size = 100, 104 : 4
+=== Chunk CPU: 4 BEGIN: 92 TH: 6.58671
+BUNDLE CPU: TYPE[0] Begin,End:Size = 104, 108 : 4
+=== Chunk CPU: 4 BEGIN: 96 TH: 5.84572
+BUNDLE CPU: TYPE[0] Begin,End:Size = 108, 112 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 112, 116 : 4
+=== Chunk CPU: 4 BEGIN: 100 TH: 6.64448
+BUNDLE CPU: TYPE[0] Begin,End:Size = 116, 120 : 4
+=== Chunk CPU: 4 BEGIN: 104 TH: 6.223
+BUNDLE CPU: TYPE[0] Begin,End:Size = 120, 124 : 4
+=== Chunk CPU: 4 BEGIN: 112 TH: === Chunk CPU: 4 BEGIN: 108 TH: 9.39507
+BUNDLE CPU: TYPE[0] Begin,End:Size = 124, 128 : 4
+=== Chunk CPU: 4 BEGIN: 116 TH: 9.16034
+6.71578
+BUNDLE CPU: TYPE[0] Begin,End:Size = 128, 132 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 132, 136 : === Chunk CPU: 4 BEGIN: 120 TH: 4
+10.7044
+BUNDLE CPU: TYPE[0] Begin,End:Size = 136, 140 : 4
+=== Chunk CPU: 4 BEGIN: 124=== Chunk CPU: 4 BEGIN: 128 TH:  TH: 11.8429
+BUNDLE CPU: TYPE[0] Begin,End:Size = 140, 144 : 4
+10.5449
+BUNDLE CPU: TYPE[0] Begin,End:Size = 144, 148 : 4
+=== Chunk CPU: 4 BEGIN: 132 TH: 7.14722
+BUNDLE CPU: TYPE[0] Begin,End:Size = 148, 152 : 4
+=== Chunk CPU: 4 BEGIN: 136 TH: 6.6622
+BUNDLE CPU: TYPE[0] Begin,End:Size = 152, 156 : 4
+=== Chunk CPU: 4 BEGIN: 140 TH: 8.13254
+BUNDLE CPU: TYPE[0] Begin,End:Size = 156, 160 : === Chunk CPU: 4 BEGIN: 144 TH: 4
+8.04082
+BUNDLE CPU: TYPE[0] Begin,End:Size = 160=== Chunk CPU: 4 BEGIN: 148 TH: 9.39949
+, 164 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 164, 168 : 4
+=== Chunk CPU: 4 BEGIN: 152 TH: 8.54137
+BUNDLE CPU: TYPE[0] Begin,End:Size = 168, 172 : 4
+=== Chunk CPU: 4 BEGIN: 156 TH: 9.07243
+BUNDLE CPU: TYPE[0] Begin,End:Size = 172, 176 : 4
+=== Chunk CPU: 4 BEGIN: 160 TH: 10.4526=== Chunk CPU: 4 BEGIN: 164 TH: 9.99845
+BUNDLE CPU: TYPE[0] Begin,End:Size = 176, 180 : 4
+
+BUNDLE CPU: TYPE[0] Begin,End:Size = === Chunk CPU: 4 BEGIN: 168 TH: 8.73616
+180, 184 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 184, 188 : 4
+=== Chunk CPU: 4 BEGIN: 172 TH: 6.13009
+BUNDLE CPU: TYPE[0] Begin,End:Size = 188, 192 : 4
+=== Chunk CPU: 4 BEGIN: 184 TH: === Chunk CPU: 4 BEGIN: 8.36488
+BUNDLE CPU: TYPE[0] Begin,End:Size = 192, 196 : 4
+176 TH: === Chunk CPU: 4 BEGIN: 180 TH: 5.60103
+BUNDLE CPU: TYPE[0] Begin,End:Size = 196, 200 : 4
+6.11062
+BUNDLE CPU: TYPE[0] Begin,End:Size = 200, 204 : 4
+=== Chunk CPU: 4 BEGIN: 188 TH: 8.14097
+BUNDLE CPU: TYPE[0] Begin,End:Size = 204, 208 : 4
+=== Chunk CPU: 4 BEGIN: 192 TH: 7.78569
+BUNDLE CPU: TYPE[0] Begin,End:Size = 208, 212 : 4
+=== Chunk CPU: 4 BEGIN: 196 TH: 9.4815
+BUNDLE CPU: TYPE[0] Begin,End:Size = 212, 216 : 4
+=== Chunk CPU: 4 BEGIN: 200 TH: 8.31152
+BUNDLE CPU: TYPE[0=== Chunk CPU: 4 BEGIN: 204 TH: 7.48761
+] Begin,End:Size = 216, 220 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 220, 224 : 4
+=== Chunk CPU: 4 BEGIN: 208 TH: 6.31336
+BUNDLE CPU: TYPE[0] Begin,End:Size = 224, 228 : 4
+=== Chunk CPU: 4 BEGIN: 212 TH: 5.77016
+BUNDLE CPU: TYPE[0] Begin,End:Size = 228, 232 : 4
+=== Chunk CPU: 4=== Chunk CPU: 4 BEGIN: 216 TH: 5.75463
+BUNDLE CPU: TYPE[0] Begin,End:Size = 232, 236 : 4
+ BEGIN: 220 TH: 6.56261
+BUNDLE CPU: TYPE[0] Begin,End:Size = === Chunk CPU: 4 BEGIN: 224 TH: 7.29544
+236, 240 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 240, 244 : 4
+=== Chunk CPU: 4 BEGIN: 228 TH: 8.25798
+BUNDLE CPU: TYPE[0] Begin,End:Size = 244, 248 : 4
+=== Chunk CPU: 4 BEGIN: 232 TH: 9.66338
+BUNDLE CPU: TYPE[0] Begin,End:Size = 248, 252 : 4
+=== Chunk CPU: 4 BEGIN: 236 TH: 8.85706
+BUNDLE CPU: TYPE[0] Begin,End:Size = 252, 256 : 4
+=== Chunk CPU: 4 BEGIN: 240 TH: 7.74857
+BUNDLE CPU: TYPE[0] Begin,End:Size = 256, 260 : 4
+=== Chunk CPU: 4 BEGIN: 244 TH: 6.41617
+BUNDLE CPU: TYPE[0] Begin,End:Size = 260, 264 : 4
+=== Chunk CPU: 4 BEGIN: 248 TH: 5.77265
+BUNDLE CPU: TYPE[0] Begin,End:Size = 264, 268 : 4
+=== Chunk CPU: 4 BEGIN: 252 TH: 5.86252
+BUNDLE CPU: TYPE[0] Begin,End:Size = 268, 272 : 4
+=== Chunk CPU: === Chunk CPU: 4 BEGIN: 256 TH: 6.27622
+4 BEGIN: 260 TH: BUNDLE CPU: TYPE[0] Begin,End:Size = 272, 276 : 4
+9.23798=== Chunk CPU: 4 BEGIN: 264 TH: 9.70349
+BUNDLE CPU: TYPE[0] Begin,End:Size = 276, 280 : 4
+
+BUNDLE CPU: TYPE[0] Begin,End:Size = 280, 284 : 4
+=== Chunk CPU: 4 BEGIN: 268 TH: 9.32955
+BUNDLE CPU: TYPE[0] Begin,End:Size = 284, 288 : 4
+=== Chunk CPU: 4 BEGIN: 272 TH: 8.18044
+BUNDLE CPU: TYPE[0] Begin,End:Size = 288, 292 : 4
+=== Chunk CPU: 4 BEGIN: === Chunk CPU: 4 BEGIN: 280 TH: 9.36343
+BUNDLE CPU: TYPE[0] Begin,End:Size = 292, 296 : 4
+276 TH: 8.26942
+BUNDLE CPU: TYPE[0] Begin,End:Size = 296, 300 : 4
+=== Chunk CPU: 4 BEGIN: 284 TH: 9.27655
+BUNDLE CPU: TYPE[0] Begin,End:Size = 300, 304 : 4=== Chunk CPU: 4 BEGIN: 288 TH: 
+9.65964
+BUNDLE CPU: TYPE[0] Begin,End:Size = 304, 308=== Chunk CPU: 4 BEGIN: 292 TH: 11.7207
+ : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 308, 312 : 4
+=== Chunk CPU: 4 BEGIN: 296 TH: 6.62117
+BUNDLE CPU: TYPE[0] Begin,End:Size = 312, 316 : 4
+=== Chunk CPU: 4 BEGIN: 300 TH: 5.52941
+BUNDLE CPU: TYPE[0] Begin,End:Size = 316, 320 : === Chunk CPU: 4 BEGIN: 308 TH: === Chunk CPU: 4 BEGIN: 304 TH: 4
+6.31307
+BUNDLE CPU: TYPE[0] Begin,End:Size = 320, 324 : 4
+6.80966
+BUNDLE CPU: TYPE[0] Begin,End:Size = === Chunk CPU: 4 BEGIN: 312 TH: 324, 328 : 4
+7.66939
+BUNDLE CPU: TYPE[0] Begin,End:Size = 328, 332 : 4
+=== Chunk CPU: 4 BEGIN: 316 TH: 8.83808
+BUNDLE CPU: TYPE[0] Begin,End:Size = 332, 336 : 4
+=== Chunk CPU: 4 BEGIN: 320 TH: 8.54319
+BUNDLE CPU: TYPE[0] Begin,End:Size = 336, 340 : 4
+=== Chunk CPU: 4 BEGIN: 324 TH: 8.99936
+BUNDLE CPU: TYPE[0] Begin,End:Size = 340, 344 : 4
+=== Chunk CPU: 4 BEGIN: 328 TH: 9.47452
+BUNDLE CPU: TYPE[0] Begin,End:Size = 344, 348 : 4
+=== Chunk CPU: 4 BEGIN: 332 TH: 5.81757
+BUNDLE CPU: TYPE[0] Begin,End:Size = 348, 352 : 4
+=== Chunk CPU: 4 BEGIN: 336 TH: === Chunk CPU: 4 BEGIN: 5.42037
+BUNDLE CPU: TYPE[0] Begin,End:Size = 352, 356 : 4
+340 TH: 6.42503
+BUNDLE CPU: TYPE[0] Begin,End:Size = 356, 360 : 4
+=== Chunk CPU: 4 BEGIN: 344 TH: 5.71451
+BUNDLE CPU: TYPE[0] Begin,End:Size = 360, 364 : 4
+=== Chunk CPU: 4 BEGIN: 352 TH: 9.31088
+BUNDLE CPU: TYPE[0] Begin,End:Size = 364, 368 : 4=== Chunk CPU: 4 BEGIN: 356 TH: 8.81061
+=== Chunk CPU: 4 BEGIN: 348 TH: 
+=== Chunk CPU: 4 BEGIN: 360 TH: 6.23163
+9.14127
+BUNDLE CPU: TYPE[0] Begin,End:Size = 368, 372 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 372, 376 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 376, 380 : 4
+=== Chunk CPU: 4 BEGIN: 364 TH: 9.43032
+BUNDLE CPU: TYPE[0] Begin,End:Size = 380, 384 : 4
+=== Chunk CPU: 4 BEGIN: 368=== Chunk CPU: 4 BEGIN: 376 TH: === Chunk CPU: 4 BEGIN: 372 TH: 5.46668
+BUNDLE CPU: TYPE[0] Begin,End:Size = 384, 388 : 4
+ TH: 6.55078
+BUNDLE CPU: TYPE[0] Begin,End:Size = 388, 392 : 4
+5.5957
+BUNDLE CPU: TYPE[0] Begin,End:Size = 392=== Chunk CPU: 4 BEGIN: 380 TH: 5.65192
+, 396 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 396, 400 : 4
+=== Chunk CPU: 4 BEGIN: 388 TH: 12.3417
+BUNDLE CPU: TYPE[0] Begin,End:Size = 400, 404 : 4
+=== Chunk CPU: 4 BEGIN: 384 TH: 6.60564
+BUNDLE CPU: TYPE[0] Begin,End:Size = 404, 408 : 4
+=== Chunk CPU: 4 BEGIN: 392 TH: 9.08397
+BUNDLE CPU: TYPE[0] Begin,End:Size = 408, 412 : 4
+=== Chunk CPU: 4 BEGIN: 396 TH: 8.32154
+BUNDLE CPU: TYPE[0] Begin,End:Size = 412, 416 : 4=== Chunk CPU: 4 BEGIN: 
+400 TH: 9.44858
+BUNDLE CPU: TYPE[0] Begin,End:Size = 416, 420 : 4
+=== Chunk CPU: 4 BEGIN: 404 TH: 9.79139
+BUNDLE CPU: TYPE[0] Begin,End:Size = 420, 424 : 4
+=== Chunk CPU: 4 BEGIN: 408 TH: 10.1675
+BUNDLE CPU: TYPE[0] Begin,End:Size = 424, 428 : 4
+=== Chunk CPU: 4 BEGIN: 412 TH: 11.1614
+BUNDLE CPU: TYPE[0] Begin,End:Size = 428, 432 : 4
+=== Chunk CPU: 4 BEGIN: 416 TH: 8.99936
+BUNDLE CPU: TYPE[0] Begin,End:Size = 432, 436 : 4
+=== Chunk CPU: 4 BEGIN: 420 TH: 6.29876
+BUNDLE CPU: TYPE[0] Begin,End:Size = 436, 440 : 4
+=== Chunk CPU: 4 BEGIN: 424 TH: 6.54425
+BUNDLE CPU: TYPE[0] Begin,End:Size = 440, 444=== Chunk CPU: 4 BEGIN: 428 TH: 7.19958
+ : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 444, 448 : 4
+=== Chunk CPU: 4 BEGIN: 432 TH: 8.03904
+BUNDLE CPU: TYPE[0] Begin,End:Size = 448, 452 : 4
+=== Chunk CPU: 4 BEGIN: 436 TH: 8.72909
+BUNDLE CPU: TYPE[0] Begin,End:Size = 452, 456 : 4
+=== Chunk CPU: 4 BEGIN: 440 TH: 9.44836
+BUNDLE CPU: TYPE[0] Begin,End:Size = 456, 460 : 4
+=== Chunk CPU: 4 BEGIN: 444 TH: 9.07779
+BUNDLE CPU: TYPE[0] Begin,End:Size = 460, 464 : 4
+=== Chunk CPU: 4 BEGIN: 448 TH: 5.84614
+BUNDLE CPU: TYPE[0] Begin,End:Size = 464, 468 : 4
+=== Chunk CPU: 4 BEGIN: 452 TH: 5.65744
+BUNDLE CPU: TYPE[0] Begin,End:Size = 468, 472 : 4
+=== Chunk CPU: 4 BEGIN: 456 TH: 5.86802
+BUNDLE CPU: TYPE[0] Begin,End:Size = 472, 476 : === Chunk CPU: 4 BEGIN: 4604
+ TH: 6.16648
+BUNDLE CPU: TYPE[0] Begin,End:Size = 476, 480=== Chunk CPU: 4 BEGIN: 464 TH:  : 4
+8.81236
+BUNDLE CPU: TYPE[0] Begin,End:Size = 480, 484 : 4
+=== Chunk CPU: 4 BEGIN: 468 TH: 8.71407
+BUNDLE CPU: TYPE[0] Begin,End:Size = 484, 488 : 4
+=== Chunk CPU: 4 BEGIN: 472 TH: 8.66386
+BUNDLE CPU: TYPE[0] Begin,End:Size = 488, 492 : 4
+=== Chunk CPU: 4 BEGIN: 476 TH: 7.4179
+BUNDLE CPU: TYPE[0] Begin,End:Size = 492, 496 : 4
+=== Chunk CPU: 4 BEGIN: 480 TH: 6.37547
+BUNDLE CPU: TYPE[0] Begin,End:Size = 496, 500 : 4
+=== Chunk CPU: 4 BEGIN: 484 TH: 6.62709
+BUNDLE CPU: TYPE[0] Begin,End:Size = 500, 504 : 4
+=== Chunk CPU: 4 BEGIN: 488 TH: 5.54205
+=== Chunk CPU: === Chunk CPU: 4 BEGIN: 496 TH: 10.5608
+BUNDLE CPU: TYPE[0] Begin,End:Size = 504, 508 : 4
+4 BEGIN: 492 TH: === Chunk CPU: 4 BEGIN: 500 TH: 9.20692
+BUNDLE CPU: TYPE[0] Begin,End:Size = 508, 512 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 512, 516 : 4
+7.32028
+=== Chunk CPU: 4 BEGIN: 504 TH: BUNDLE CPU: TYPE[0] Begin,End:Size = 516, 520 : 4
+14.5599
+BUNDLE CPU: TYPE[0] Begin,End:Size = 520, 524 : 4
+=== Chunk CPU: 4 BEGIN: 508 TH: 13.6874
+BUNDLE CPU: TYPE[0=== Chunk CPU: 4 BEGIN: 512 TH: 14.2242
+] Begin,End:Size = 524, 528 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 528, 532=== Chunk CPU: 4 BEGIN: 516 TH: === Chunk CPU: 4 BEGIN: 520 TH: 14.1353
+12.9215
+ : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 532, 536 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 536, 540 : === Chunk CPU: 4 BEGIN: 524 TH: 12.8761
+4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 540, 544 : 4=== Chunk CPU: 4 BEGIN: 528 TH: 
+13.9953
+BUNDLE CPU: TYPE[0] Begin,End:Size = 544, 548 : 4
+=== Chunk CPU: 4 BEGIN: 532 TH: 14.091
+BUNDLE CPU: TYPE[0] Begin,End:Size = 548, 552 : 4
+=== Chunk CPU: 4 BEGIN: 536 TH: 12.5402
+BUNDLE CPU: TYPE[0] Begin,End:Size = 552, 556 : 4
+=== Chunk CPU: 4 BEGIN: 540 TH: 13.5295
+BUNDLE CPU: TYPE[0] Begin,End:Size = 556, 560 : 4
+=== Chunk CPU: 4 BEGIN: 544 TH: 14.5144
+=== Chunk CPU: 4 BEGIN: 548 TH: BUNDLE CPU: TYPE[0] Begin,End:Size = 560, === Chunk CPU: 4 BEGIN: 552 TH: 14.3674
+13.4043
+564 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 564, === Chunk CPU: 4 BEGIN: 568 : 4
+556 TH: 13.6565
+BUNDLE CPU: TYPE[0] Begin,End:Size = 568, 572 : 4
+BUNDLE CPU: TYPE[0] Begin,End:Size = 572, 576 : 4
+=== Chunk CPU: 4 BEGIN: 560 TH: 13.4634
+BUNDLE CPU: TYPE[0] Begin,End:Size = 576, 580 : 4
+=== Chunk CPU: 4 BEGIN: === Chunk CPU: 4 BEGIN: 568 TH: 564 TH: 14.2893
+BUNDLE CPU: TYPE[0] Begin,End:Size = 580, 584 : 4
+13.8836
+BUNDLE CPU: TYPE[0] Begin,End:Size = 584, 588 : 4
+=== Chunk CPU: 4 BEGIN: 576 TH: === Chunk CPU: 4 BEGIN: 572 TH: 13.3386
+BUNDLE CPU: TYPE[0] Begin,End:Size = 588, 592 : 4
+=== Chunk CPU: 12.7995
+4 BEGIN: 580 TH: BUNDLE CPU: TYPE[0] Begin,End:Size = 592, 596 : 4
+=== Chunk CPU: 4 BEGIN: 584 TH: 14.197
+BUNDLE CPU: TYPE[0] Begin,End:Size = 596, 600 : 4
+13.5809
+BUNDLE CPU: TYPE[0] Begin,End:Size = 600=== Chunk CPU: 4 BEGIN: 588 TH: , 604 : 4
+=== Chunk GPU[4]: 4 BEGIN: 0 TH: === Chunk CPU: 4 BEGIN: 592 TH: 13.0962
+BUNDLE CPU: TYPE[0] Begin,End:Size = 604, 6960 : 6356
+0.131855 it: 0
+13.8918*** Checking FPGA[4] step: 0 chunk sizes: 
+0 , 0 , 4
+                     thr: 0 , 0 , 0.131855
+               decay thr: 0 , 0 , === Chunk CPU: 4 BEGIN: 600 TH: 0.129218
+FPGA[4] FILLED OK
+ Filter FPGA[4] chunk: 64 Begin = 6960, End = 29957 fg 9.64197
+0.0100682
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 6960, 7024 : 64
+BUNDLE CPU: TYPE[0] Begin,End:Size = 7024, 12744 : 5720
+BUNDLE CPU: TYPE[0] Begin,End:Size = 12744, 17032 : 4288
+=== Chunk CPU: 4 BEGIN: 596 TH: 3.94487
+BUNDLE CPU: TYPE[0] Begin,End:Size = 17032, 20236 : 3204
+=== Chunk GPU[3]: 8 BEGIN: 4 TH: 0.258715 it: 4
+*** Checking FPGA[3] step: 1 chunk sizes: 0 , 4 , 8
+                     thr: 0 , 0.131855 , 0.258715
+               decay thr: 0 , 0.129218 , 0.253541
+FPGA[3] FILLED OK
+ Filter FPGA[3] chunk: 128 Begin = 20236, End = 29957 fg 0.0334244
+BUNDLE FPGA: TYPE[3] Begin,End:Size = 20236, 20364 : 128
+=== Chunk GPU[2]: 16 BEGIN: 12 TH: 0.50775 it: 12
+*** Checking FPGA[2] step: 2 chunk sizes: 4 , 8 , 16
+                     thr: 0.131855 , 0.258715 , 0.50775
+               decay thr: 0.131855 , 0.253541 , 0.497595
+FPGA[2] FILLED OK
+ Filter FPGA[2] chunk: 256 Begin = 20364, End = 29957 fg 0.0334244
+BUNDLE FPGA: TYPE[2] Begin,End:Size = 20364, 20620 : 256
+=== Chunk GPU[1]: 32 BEGIN: 28 TH: 0.981703 it: 28
+*** Checking FPGA[1] step: 3 chunk sizes: 8 , 16 , 32
+                     thr: 0.258715 , 0.50775 , 0.981703
+               decay thr: 0.258715 , 0.497595 , 0.962069
+FPGA[1] FILLED OK
+ Filter FPGA[1] chunk: 512 Begin = 20620, End = 29957 fg 0.0334244
+BUNDLE FPGA: TYPE[1] Begin,End:Size = 20620, 21132 : 512
+=== Chunk GPU[4]: 64 BEGIN: 6960 TH: 1.98136 it: 6960
+*** Checking FPGA[4] step: 4 chunk sizes: 16 , 32 , 64
+                     thr: 0.50775 , 0.981703 , 1.98136
+               decay thr: 0.50775 , 0.962069 , 1.94174
+FPGA[4] FILLED OK
+ Filter FPGA[4] chunk: 1024 Begin = 21132, End = 29957 fg 0.0334244
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 21132, 22156 : 1024
+=== Chunk GPU[3]: 128 BEGIN: 20236 TH: 3.78738 it: 20236
+*** Checking FPGA[3] step: 5 chunk sizes: 32 , 64 , 128
+                     thr: 0.981703 , 1.98136 , 3.78738
+               decay thr: 0.981703 , 1.94174 , 3.71163
+FPGA[3] FILLED OK
+ Filter FPGA[3] chunk: 2048 Begin = 22156, End = 29957 fg 0.0334244
+BUNDLE FPGA: TYPE[3] Begin,End:Size = 22156, 24204 : 2048
+=== Chunk GPU[2]: 256 BEGIN: 20364 TH: 7.02144 it: 20364
+*** Checking FPGA[2] step: 6 chunk sizes: 64 , 128 , 256
+                     thr: 1.98136 , 3.78738 , 7.02144
+               decay thr: 1.98136 , 3.71163 , 6.88101
+FPGA[2] FILLED OK
+ Filter FPGA[2] chunk: 4096 Begin = 24204, End = 29957 fg 0.0334244
+BUNDLE FPGA: TYPE[2] Begin,End:Size = 24204, 28300 : 4096
+=== Chunk GPU[1]: 512 BEGIN: 20620 TH: 11.343 it: 20620
+*** Checking FPGA[1] step: 7 chunk sizes: 128 , 256 , 512
+                     thr: 3.78738 , 7.02144 , 11.343
+               decay thr: 3.78738 , 6.88101 , 11.1162
+FPGA[1] FILLED OK
+ Filter FPGA[1] chunk: 8192 Begin = 28300, End = 29957 fg 0.0334244
+BUNDLE FPGA (iterationspace tail): TYPE[1] Begin,End:Size = 28300, 29956 : 1656
+=== Chunk GPU[4]: 1024 BEGIN: 21132 TH: 16.0303 it: 21132
+*** Checking FPGA[4] step: 8 chunk sizes: 256 , 512 , 1024
+                     thr: 7.02144 , 11.343 , 16.0303
+               decay thr: 7.02144 , 11.1162 , 15.7097
+FPGA[4] FILLED OK
+ Filter FPGA[4] chunk: 16384 Begin = 29956, End = 29957 fg 0.0334244
+BUNDLE CPU (iterationspace tail): TYPE[0] Begin,End:Size = 29956, 29956 : 0
+=== Chunk CPU: 0 BEGIN: 29956 TH: 0
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29956, 29957 : 1
+=== Chunk CPU: 1 BEGIN: 29956 TH: 25.9916
+=== Chunk GPU[1]: 1656 BEGIN: 28300 TH: 24.9923 it: 28300
+=== Chunk GPU[3]: 2048 BEGIN: 22156 TH: 21.6591 it: 22156
+=== Chunk GPU[2]: 4096 BEGIN: 24204 TH: 34.4904 it: 24204
+=== Chunk CPU: 4288 BEGIN: 12744 TH: 1.84265
+=== Chunk CPU: 3204 BEGIN: 17032 TH: 1.24944
+=== Chunk CPU: 6356 BEGIN: 604 TH: 1.8866
+=== Chunk CPU: 5720 BEGIN: 7024 TH: 1.54827
+STEP: 1
+Running Pipeline: 4 4 
+ Filter FPGA[4] chunk: 16384 Begin = 0, End = 29957 fg 0.0334244
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 0, 16384 : 16384
+BUNDLE CPU: TYPE[0] Begin,End:Size = 16384, 16992 : 608
+*** Checking FPGA[2] step: 10 chunk sizes: 1024 , 0 , 4096
+                     thr: 16.0303 , 0 , 34.4904
+               decay thr: 16.0303 , 0 , 33.8006
+ Filter FPGA[2] chunk: 29957 Begin = 16992, End = 29957 fg 18.2818
+BUNDLE FPGA (iterationspace tail): TYPE[2] Begin,End:Size = 16992, 29956 : 12964
+ Filter FPGA[1] chunk: 29957 Begin = 29956, End = 29957 fg 18.2818
+BUNDLE CPU (iterationspace tail): TYPE[0] Begin,End:Size = 29956, 29956 : 0
+=== Chunk CPU: 0 BEGIN: 29956 TH: BUNDLE CPU: TYPE[0] Begin,End:Size = 29956, 29957 : 1
+0
+=== Chunk CPU: 1 BEGIN: 29956 TH: 40.2366
+=== Chunk CPU: 608 BEGIN: 16384 TH: 1.84493
+=== Chunk GPU[2]: 12964 BEGIN: 16992 TH: 26.2529 it: 16992
+=== Chunk GPU[4]: 16384 BEGIN: 0 TH: 20.8958 it: 0
+STEP: 2
+Running Pipeline: 4 4 
+*** Checking FPGA[4] step: 12 chunk sizes: 4096 , 0 , 16384
+                     thr: 34.4904 , 0 , 20.8958
+               decay thr: 34.4904 , 0 , 20.4779
+ Filter FPGA[4] chunk: 29957 Begin = 0, End = 29957 fg 22.2768
+BUNDLE FPGA: TYPE[4] Begin,End:Size = 0, 29957 : 29957
+=== Chunk GPU[4]: 29957 BEGIN: 0 TH: 25.3877 it: 0
+STEP: 3
+Running Pipeline: 4 4 
+*** Checking FPGA[4] step: 14 chunk sizes: 16384 , 0 , 29957
+                     thr: 20.8958 , 0 , 25.3877
+               decay thr: 20.8958 , 0 , 24.88
+******** Stable phase ********* np: 4 mea: 14
+ Filter FPGA[4] chunk: 29956 Begin = 0, End = 29957 fg 22.2768
+  stopConditionModeOn Chunk FPGA= 29956 Begin = 0, End = 29957 fg 22.2768
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case => Chunk FPGA: 5363
+BUNDLE CONCORD FPGA: TYPE[4] Begin,End:Size = 0, 5363 : 5363
+ Filter FPGA[1] chunk: 29956 Begin = 5363, End = 29957 fg 22.2768
+***** Concord Case - Active FPGAs= 3 > Begin: 5363 end: 29957
+***** Concord Case => Chunk FPGA: 5369
+BUNDLE CONCORD FPGA: TYPE[1] Begin,End:Size = 5363, 10732 : 5369
+ Filter FPGA[3] chunk: 29956 Begin = 10732, End = 29957 fg 22.2768
+***** Concord Case - Active FPGAs= 2 > Begin: 10732 end: 29957
+***** Concord Case => Chunk FPGA: 5393
+BUNDLE CONCORD FPGA: TYPE[3] Begin,End:Size = 10732, 16125 : 5393
+BUNDLE CPU: TYPE[0] Begin,End:Size = 16125, 19097 : 2972
+BUNDLE CPU: TYPE[0] Begin,End:Size = 19097, 19533 : 436
+BUNDLE CPU: TYPE[0] Begin,End:Size = 19533, 20105 : 572
+BUNDLE CPU: TYPE[0] Begin,End:Size = 20105, 20645 : 540
+ Filter FPGA[2] chunk: 29956 Begin = 20645, End = 29957 fg 14.2298
+***** Concord Case - Active FPGAs= 1 > Begin: 20645 end: 29957
+***** Concord Case => Chunk FPGA: 2021
+BUNDLE CONCORD FPGA: TYPE[2] Begin,End:Size = 20645, 22666 : 2021
+=== Chunk GPU[2]: 2021 BEGIN: 20645 TH: 26.2529 it: 20645
+BUNDLE CPU: TYPE[0] Begin,End:Size = 22666, 24490 : 1824
+=== Chunk CPU: 540 BEGIN: 20105 TH: 2.26025
+BUNDLE CPU: TYPE[0] Begin,End:Size = 24490, 25858 : 1368
+=== Chunk GPU[3]: 5393 BEGIN: 10732 TH: 21.6591 it: 10732
+BUNDLE CPU: TYPE[0] Begin,End:Size = 25858, 26882 : 1024
+=== Chunk GPU[1]: 5369 BEGIN: 5363 TH: 24.9923 it: 5363
+BUNDLE CPU: TYPE[0] Begin,End:Size = 26882, 27650 : 768
+=== Chunk GPU[4]: 5363 BEGIN: 0 TH: 16.4331 it: 0
+BUNDLE CPU: TYPE[0] Begin,End:Size = 27650, 28226 : 576
+=== Chunk CPU: 436 BEGIN: 19097 TH: 0.837014
+BUNDLE CPU: TYPE[0] Begin,End:Size = 28226, 28658 : 432
+=== Chunk CPU: 572 BEGIN: 19533 TH: 1.03815
+BUNDLE CPU: TYPE[0] Begin,End:Size = 28658, 28982 : 324
+=== Chunk CPU: 576 BEGIN: 27650 TH: 2.06645
+BUNDLE CPU: TYPE[0] Begin,End:Size = 28982, 29226 : 244
+=== Chunk CPU: 244 BEGIN: 28982 TH: 9.07596
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29226, 29410 : 184
+=== Chunk CPU: 324 BEGIN: 28658 TH: 4.53222
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29410, 29546 : 136
+=== Chunk CPU: 136 BEGIN: 29410 TH: 19.7773
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29546, 29650 : 104
+=== Chunk CPU: 184 BEGIN: 29226 TH: 7.49866
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29650, 29726 : 76
+=== Chunk CPU: 104 BEGIN: 29546 TH: 5.67974
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29726, 29782 : 56
+=== Chunk CPU: 56 BEGIN: 29726 TH: 19.6426
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29782, 29826 : 44
+=== Chunk CPU: 44 BEGIN: 29782 TH: 21.0852
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29826, 29858 : 32
+=== Chunk CPU: 32 BEGIN: 29826 TH: 21.0174
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29858, 29882 : 24
+=== Chunk CPU: 24 BEGIN: 29858 TH: 28.6073
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29882, 29902 : 20
+=== Chunk CPU: 20 BEGIN: 29882 TH: 24.5415
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29902, 29914 : 12
+=== Chunk CPU: 12 BEGIN: 29902 TH: 24.6108
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29914, 29926 : 12
+=== Chunk CPU: 12 BEGIN: 29914 TH: 25.4859
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29926, 29934 : 8
+=== Chunk CPU: 8 BEGIN: 29926 TH: 25.6317
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29934, 29938 : 4
+=== Chunk CPU: 4 BEGIN: 29934 TH: 29.6551
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29938, 29942 : 4
+=== Chunk CPU: 4 BEGIN: 29938 TH: 29.5303
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29942, 29946 : 4
+=== Chunk CPU: 4 BEGIN: 29942 TH: 33.0134
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29946, 29950 : 4
+=== Chunk CPU: 4 BEGIN: 29946 TH: === Chunk CPU: 76 BEGIN: 29650 TH: 3.70451
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29950, 29954 : 4
+=== Chunk CPU: 4 BEGIN: 29950 TH: 27.9789
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29954, 29957 : 3
+=== Chunk CPU: 3 BEGIN: 29954 TH: 36.9877
+31.2515
+=== Chunk CPU: 432 BEGIN: 28226 TH: 2.70722
+=== Chunk CPU: 768 BEGIN: 26882 TH: 1.93082
+=== Chunk CPU: 1024 BEGIN: 25858 TH: 2.23512
+=== Chunk CPU: 1368 BEGIN: 24490 TH: 2.41334
+=== Chunk CPU: 1824 BEGIN: 22666 TH: 1.89592
+=== Chunk CPU: 2972 BEGIN: 16125 TH: 1.2995
+BEGIN FINALRUN
+starting time energy
+Running Pipeline: 4 4 
+ Filter FPGA[4] chunk: 29956 Begin = 0, End = 29957 fg 14.2298
+  stopConditionModeOn Chunk FPGA= 29956 Begin = 0, End = 29957 fg 14.2298
+***** Concord Case - Active FPGAs= 4 > Begin: 0 end: 29957
+***** Concord Case => Chunk FPGA: 5986
+BUNDLE CONCORD FPGA: TYPE[4] Begin,End:Size = 0, 5986 : 5986
+ Filter FPGA[2] chunk: 29956 Begin = 5986, End = 29957 fg 14.2298
+***** Concord Case - Active FPGAs= 3 > Begin: 5986 end: 29957
+***** Concord Case => Chunk FPGA: 5987
+BUNDLE CONCORD FPGA: TYPE[2] Begin,End:Size = 5986, 11973 : 5987
+ Filter FPGA[1] chunk: 29956 Begin = 11973, End = 29957 fg 14.2298
+***** Concord Case - Active FPGAs= 2 > Begin: 11973 end: 29957
+***** Concord Case => Chunk FPGA: 5993
+BUNDLE CONCORD FPGA: TYPE[1] Begin,End:Size = 11973, 17966 : 5993
+BUNDLE CPU: TYPE[0] Begin,End:Size = 17966, 20442 : 2476
+BUNDLE CPU: TYPE[0] Begin,End:Size = 20442, 21138 : 696
+BUNDLE CPU: TYPE[0] Begin,End:Size = 21138, 21730 : 592
+ Filter FPGA[3] chunk: 29956 Begin = 21730, End = 29957 fg 10.8782
+***** Concord Case - Active FPGAs= 1 > Begin: 21730 end: 29957
+***** Concord Case => Chunk FPGA: 2699
+BUNDLE CONCORD FPGA: TYPE[3] Begin,End:Size = 21730, 24429 : 2699
+BUNDLE CPU: TYPE[0] Begin,End:Size = 24429, 25813 : 1384
+=== Chunk GPU[3]: 2699 BEGIN: 21730 TH: 21.6591 it: 21730
+BUNDLE CPU: TYPE[0] Begin,End:Size = 25813, 26849 : 1036
+=== Chunk GPU[1]: 5993 BEGIN: 11973 TH: 24.9923 it: 11973
+BUNDLE CPU: TYPE[0] Begin,End:Size = 26849, 27625 : 776
+=== Chunk CPU: 592 BEGIN: 21138 TH: 1.79285
+BUNDLE CPU: TYPE[0] Begin,End:Size = 27625, 28209 : 584
+=== Chunk CPU: 696 BEGIN: 20442 TH: 2.0795
+BUNDLE CPU: TYPE[0] Begin,End:Size = 28209, 28645 : 436
+=== Chunk CPU: 436 BEGIN: 28209 TH: 12.3295
+BUNDLE CPU: TYPE[0] Begin,End:Size = 28645, 28973 : 328
+=== Chunk GPU[=== Chunk GPU[2]: 5987 BEGIN: 5986 TH: 26.2529 it: 5986
+BUNDLE CPU: TYPE[0] Begin,End:Size = 28973, 29221 : 248
+=== Chunk CPU: 4]: 5986 BEGIN: 0 TH: 15.1211 it: 0
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29221, 29405 : 184
+=== Chunk CPU: 248 BEGIN: 28973 TH: 17.1474
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29405, 29545 : 140
+328 BEGIN: 28645 TH: 9.44807
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29545, 29649 : 104
+=== Chunk CPU: 104 BEGIN: 29545 TH: 17.4215
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29649, 29725 : 76
+=== Chunk CPU: 184 BEGIN: 29221 TH: 8.32788
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29725, 29785 : 60
+=== Chunk CPU: 140 BEGIN: 29405 TH: 7.12208
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29785, 29829 : 44
+=== Chunk CPU: 44 BEGIN: 29785 TH: 20.8965
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29829, 29861 : 32
+=== Chunk CPU: 60 BEGIN: 29725 TH: 18.8847
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29861, 29885 : 24
+=== Chunk CPU: 32 BEGIN: 29829 TH: 22.3194
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29885, 29905 : 20
+=== Chunk CPU: 24 BEGIN: 29861 TH: 29.7297
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29905, 29917 : 12
+=== Chunk CPU: 12 BEGIN: 29905 TH: 25.0344
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29917, 29929 : 12
+=== Chunk CPU: 20 BEGIN: 29885 TH: 24.5542
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29929, 29937 : 8
+=== Chunk CPU: 8 BEGIN: 29929 TH: 25.5011
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29937, 29941 : 4
+=== Chunk CPU: 76 BEGIN: 29649 TH: 3.10004
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29941, 29945 : 4
+=== Chunk CPU: 4 BEGIN: 29941 TH: 33.5449
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29945, 29949 : 4
+=== Chunk CPU: 4 BEGIN: 29945 TH: 26.9224
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29949, 29953 : 4
+=== Chunk CPU: 4 BEGIN: 29949 TH: 32.6656
+BUNDLE CPU: TYPE[0] Begin,End:Size = 29953, 29957 : 4
+=== Chunk CPU: 4 BEGIN: 29953 TH: 34.246
+=== Chunk CPU: 12 BEGIN: 29917 TH: 26.3569
+=== Chunk CPU: 4 BEGIN: 29937 TH: 0.329106
+=== Chunk CPU: 1036 BEGIN: 25813 TH: 2.56035
+=== Chunk CPU: 584 BEGIN: 27625 TH: 2.41259
+=== Chunk CPU: 1384 BEGIN: 24429 TH: 2.30814
+=== Chunk CPU: 776 BEGIN: 26849 TH: 2.37764
+=== Chunk CPU: 2476 BEGIN: 17966 TH: 1.46243
++--------------------+
+| POWER MEASUREMENTS |
++--------------------+
+** Processing System Domain rails ********** 
+    VCCPSINTFP =    2.447 J     VCCPSINTLP =    0.426 J       VCCPSAUX =    0.426 J 
+      VCCPSPLL =    0.426 J       MGTRAVCC =    0.128 J       MGTRAVTT =    0.058 J 
+VCCO_PSDDR_504 =    0.542 J         VCCOPS =    0.542 J        VCCOPS3 =    0.542 J 
+   VCCPSDDRPLL =    0.085 J 
+
+** Programmable Logic Domain rails ***********
+        VCCINT =    2.348 J        VCCBRAM =    0.085 J 
+        VCCAUX =    0.639 J         VCC1V2 =    0.085 J         VCC3V3 =    0.213 J 
+      VADJ_FMC =    0.213 J        MGTAVCC =    0.082 J        MGTAVTT =    0.082 J 
+
+
+Processing System Domain ENERGY = 5.622185 J
+Programmable Logic Domain ENERGY = 3.748428 J
+TOTAL ENERGY = 9.370613 J
+
+Processing System Domain POWER = 3.275185 W
+Programmable Logic Domain POWER = 2.183634 W
+TOTAL POWER = 5.458819 W
+
+CLOCK_REALTIME = 1.716601 sec
+# of samples: 32
+sample every (real) = 0.053644 sec
+sample every: 0.050000 sec
+TIEMPO TOTAL: 1713.8
+Final GPU Chunk: 7489
+Total n. rows : 29925
+Total n. rows on CPU: 9260
+Total n. rows on FPGA: 20665
+Actual percentage of work offloaded to the FPGA: 69 

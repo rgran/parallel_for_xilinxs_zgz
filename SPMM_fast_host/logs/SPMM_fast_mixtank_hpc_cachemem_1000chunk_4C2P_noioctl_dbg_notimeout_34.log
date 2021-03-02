@@ -1,0 +1,70 @@
+SPMM Simulation: mixtank_new.mtx, 4, 2
+Reading Matrix Input File
+Reading header
+Reading data
+Setting number of elements: 1995041
+Reading numbers from file
+Allocating buffers for host data
+nRows->29957 nElements->1995041
+Host sds_alloc sucess (input matrix)
+Host sds_alloc sucess (output matrix)
+Number of Rows: 29957
+NNZ: 1995041
+DBG0
+DBG2
+DBG5
+TOTAL TIME: 736.732 ms
+Total n. rows : 28896
+Total n. rows on CPU: 22896
+Total n. rows on FPGA: 6000
+Actual percentage of work offloaded to the FPGA:20% 
+[ 1897.130492] intgendriver1 open and ready
+[ 1897.130499] Reg0 at 8061000
+[ 1897.130501] Reg0 set at 0
+[ 1897.130503] WaitQueue flag set at 0
+[ 1897.130513] intgendriver2 open and ready
+[ 1897.130515] Reg0 at 9165000
+[ 1897.130517] Reg0 set at 0
+[ 1897.130518] WaitQueue flag set at 0
+[ 1904.988587] Interrupt: 55 received!
+[ 1904.988592] Reg0 at 9165000
+[ 1904.988594] Reg0 set at 1
+[ 1904.988596] Reg0 reset at 0
+[ 1904.988598] WaitQueue flag set at 0
+[ 1904.988600] WaitQueue flag updated at 1
+[ 1904.988601] Waking up process ...
+[ 1905.004725] Interrupt: 54 received!
+[ 1905.004730] Reg0 at 8061000
+[ 1905.004732] Reg0 set at 1
+[ 1905.004734] Reg0 reset at 0
+[ 1905.004736] WaitQueue flag set at 0
+[ 1905.004738] WaitQueue flag updated at 1
+[ 1905.004739] Waking up process ...
+[ 1905.256796] Interrupt: 55 received!
+[ 1905.256802] Reg0 at 9165000
+[ 1905.256804] Reg0 set at 1
+[ 1905.256806] Reg0 reset at 0
+[ 1905.256807] WaitQueue flag set at 1
+[ 1905.256809] WaitQueue flag updated at 1
+[ 1905.256811] Waking up process ...
+[ 1905.274450] Interrupt: 54 received!
+[ 1905.274456] Reg0 at 8061000
+[ 1905.274458] Reg0 set at 1
+[ 1905.274460] Reg0 reset at 0
+[ 1905.274462] WaitQueue flag set at 1
+[ 1905.274463] WaitQueue flag updated at 1
+[ 1905.274465] Waking up process ...
+[ 1905.461130] Interrupt: 55 received!
+[ 1905.461136] Reg0 at 9165000
+[ 1905.461138] Reg0 set at 1
+[ 1905.461140] Reg0 reset at 0
+[ 1905.461142] WaitQueue flag set at 1
+[ 1905.461143] WaitQueue flag updated at 1
+[ 1905.461145] Waking up process ...
+[ 1905.469652] Interrupt: 54 received!
+[ 1905.469654] Reg0 at 8061000
+[ 1905.469656] Reg0 set at 1
+[ 1905.469659] Reg0 reset at 0
+[ 1905.469660] WaitQueue flag set at 1
+[ 1905.469662] WaitQueue flag updated at 1
+[ 1905.469663] Waking up process ...

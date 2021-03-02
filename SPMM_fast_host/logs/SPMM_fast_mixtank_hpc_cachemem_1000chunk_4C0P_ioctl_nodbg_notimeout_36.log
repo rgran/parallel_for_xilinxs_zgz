@@ -1,0 +1,47 @@
+SPMM Simulation: mixtank_new.mtx, 4, 0
+Reading Matrix Input File
+Reading header
+Reading data
+Setting number of elements: 1995041
+Reading numbers from file
+Allocating buffers for host data
+nRows->29957 nElements->1995041
+Number of Rows: 29957
+NNZ: 1995041
+starting time energy
++--------------------+
+| POWER MEASUREMENTS |
++--------------------+
+** Full Power Domain rails ********** 
+    VCCPSINTFP =    1.170 J       MGTRAVCC =    0.047 J       MGTRAVTT =    0.019 J 
+VCCO_PSDDR_504 =    0.235 J    VCCPSDDRPLL =    0.034 J 
+
+** Low Power Domain rails ***********
+    VCCPSINTLP =    0.172 J 
+      VCCPSAUX =    0.000 J       VCCPSPLL =    0.034 J         VCCOPS =    0.000 J 
+       VCCOPS3 =    0.000 J 
+
+** Programmable Logic Domain rails ***********
+        VCCINT =    0.361 J        VCCBRAM =    0.034 J 
+        VCCAUX =    0.189 J         VCC1V2 =    0.034 J         VCC3V3 =    0.086 J 
+       MGTAVCC =    0.000 J        MGTAVTT =    0.031 J 
+
+Full Power Domain ENERGY        = 1.506201 J
+Low Power Domain ENERGY         = 0.206424 J
+Programmable Logic Domain ENERGY= 0.736243 J
+TOTAL ENERGY                    = 2.448869 J
+
+Full Power Domain POWER         = 2.188964 W
+Low Power Domain POWER          = 0.299996 W
+Programmable Logic Domain POWER = 1.069983 W
+TOTAL POWER                     = 3.558944 W
+
+CLOCK_REALTIME = 0.688089 sec
+# of samples: 13
+sample every (real) = 0.052930 sec
+sample every: 0.050000 sec
+TIEMPO TOTAL: 683.365
+Total n. rows : 29957
+Total n. rows on CPU: 29957
+Total n. rows on FPGA: 0
+Actual percentage of work offloaded to the FPGA:0% 
