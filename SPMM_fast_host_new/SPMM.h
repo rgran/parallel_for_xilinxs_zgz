@@ -20,6 +20,10 @@
 
 #include  "kernelspmm.h"
 
+#if defined (ARMPL_MULT)
+#include "armpl.h"
+#endif // defined (ARMPL_MULT)
+
 using namespace std;
 
 /*****************************************************************************
@@ -117,6 +121,41 @@ bool verifyResults(const float *cpuResults, const float *gpuResults,
     }
     return passed;
 }
+
+#if defined(ARMPL_MULT)
+template <typename DTYPE>
+void spmvCpuARMPL(const DTYPE *val, const int *cols, const int *rowDelimiters,
+    const DTYPE *vec_trans, DTYPE *out, int num_rows, unsigned int begin, unsigned int end)
+{
+    //cout << "<CPU> ROWS --- begin: " << begin << "; end: " << end << "\n";
+    // copy the values to ARM PL matrix
+    armpl_spmat_t armpl_mat;
+    int creation_flags = 0;
+    auto info = armpl_spmat_create_csr_s(&armpl_mat, end - begin, x_width, &rowDelimiters[begin], cols, val, creation_flags);
+
+    info = armpl_spmat_hint(armpl_mat, ARMPL_SPARSE_HINT_STRUCTURE, ARMPL_SPARSE_STRUCTURE_UNSTRUCTURED);
+    if (info!=ARMPL_STATUS_SUCCESS) printf("ERROR: armpl_spmat_hint returned %d\n", info);
+    info = armpl_spmat_hint(armpl_mat, ARMPL_SPARSE_HINT_SPMV_OPERATION, ARMPL_SPARSE_OPERATION_NOTRANS);
+    if (info!=ARMPL_STATUS_SUCCESS) printf("ERROR: armpl_spmat_hint returned %d\n", info);
+    info = armpl_spmat_hint(armpl_mat, ARMPL_SPARSE_HINT_SPMV_INVOCATIONS, ARMPL_SPARSE_INVOCATIONS_FEW);
+    if (info!=ARMPL_STATUS_SUCCESS) printf("ERROR: armpl_spmat_hint returned %d\n", info);
+
+    info = armpl_spmv_optimize(armpl_mat);
+    if (info!=ARMPL_STATUS_SUCCESS) printf("ERROR: armpl_spmv_optimize returned %d\n", info);
+
+    const float alpha = 1.0f, beta = 0.0f;
+
+    for(int xw = 0; xw < x_width; xw++) {
+	// multiply
+	info = armpl_spmv_exec_s(ARMPL_SPARSE_OPERATION_NOTRANS, alpha, armpl_mat, &vec_trans[xw*numRows], beta, &h_out[begin*x_width]);
+	if (info!=ARMPL_STATUS_SUCCESS) { printf("ERROR: armpl_spmv_exec_s returned %d\n", info); }
+    }
+
+    info = armpl_spmat_destroy(armpl_mat);
+    if (info!=ARMPL_STATUS_SUCCESS)
+	printf("ERROR: armpl_spmat_destroy returned %d\n", info);
+}
+#endif // defined(ARMPL_MULT)
 
 template <typename DTYPE>
 void spmvCpu(const DTYPE *val, const int *cols, const int *rowDelimiters,

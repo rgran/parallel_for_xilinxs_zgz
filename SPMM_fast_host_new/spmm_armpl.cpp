@@ -217,13 +217,13 @@ int main(int argc, char *argv[])
     armpl_spmat_t armpl_mat;
     int creation_flags = 0;
 
-    auto start = std::chrono::steady_clock::now();
+    auto start_create = std::chrono::steady_clock::now();
     armpl_status_t info = armpl_spmat_create_csr_s(&armpl_mat, numRows, numColumns, h_rowDelimiters, h_cols, h_val, creation_flags);
-    auto stop = std::chrono::steady_clock::now();
-    double ex_time = std::chrono::duration_cast<std::chrono::milliseconds>(stop-start).count();
+    auto stop_create = std::chrono::steady_clock::now();
+    double ex_time = std::chrono::duration_cast<std::chrono::milliseconds>(stop_create-start_create).count();
     std::cout << "Time create csr: " << ex_time << "ms" << std::endl;
 
-    start = std::chrono::steady_clock::now();
+    auto start = std::chrono::steady_clock::now();
     /* 3a. Supply any pertinent information that is known about the matrix */
     info = armpl_spmat_hint(armpl_mat, ARMPL_SPARSE_HINT_STRUCTURE, ARMPL_SPARSE_STRUCTURE_UNSTRUCTURED);
     if (info!=ARMPL_STATUS_SUCCESS) printf("ERROR: armpl_spmat_hint returned %d\n", info);
@@ -239,7 +239,7 @@ int main(int argc, char *argv[])
     info = armpl_spmv_optimize(armpl_mat);
     if (info!=ARMPL_STATUS_SUCCESS) printf("ERROR: armpl_spmv_optimize returned %d\n", info);
 
-    stop = std::chrono::steady_clock::now();
+    auto stop = std::chrono::steady_clock::now();
     ex_time = std::chrono::duration_cast<std::chrono::milliseconds>(stop-start).count();
     std::cout << "Time optimize: " << ex_time << "ms" << std::endl;
 
@@ -260,14 +260,14 @@ int main(int argc, char *argv[])
             *(h_out+row*x_width+xw)=DTYPE(0);
         }
 
+    start = std::chrono::steady_clock::now();
     for(int xw = 0; xw < x_width; ++xw) {
-        start = std::chrono::steady_clock::now();
         info = armpl_spmv_exec_s(ARMPL_SPARSE_OPERATION_NOTRANS, alpha, armpl_mat, h_vec+xw*numRows, beta, h_out+xw*numRows);
         if (info!=ARMPL_STATUS_SUCCESS) { printf("ERROR: armpl_spmv_exec_s returned %d\n", info); }
         stop = std::chrono::steady_clock::now();
-        ex_time = std::chrono::duration_cast<std::chrono::milliseconds>(stop-start).count();
-        std::cout << "Time spmv xw: " << xw << ", " << ex_time << "ms" << std::endl;
     }
+    ex_time = std::chrono::duration_cast<std::chrono::milliseconds>(stop-start).count();
+    std::cout << "Time spmv (all columns): " << ex_time << "ms" << std::endl;
 
     for (int i = 0; i < 5; ++i) {
         std::cout << h_out[i] << std::endl;

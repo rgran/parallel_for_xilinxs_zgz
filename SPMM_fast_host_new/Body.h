@@ -47,7 +47,7 @@ int ioctl_flag;
 
 //Variables used for timing
 struct timespec start1, start2, start3, start4, finish1, finish2, finish3, finish4;
-double elapsed1, elapsed2, elapsed3, elapsed4;		
+double elapsed1, elapsed2, elapsed3, elapsed4;
 
 /*Interrupt drivers*/
 #define DRIVER_FILE_NAME_1 "/dev/intgendriver1"
@@ -80,16 +80,16 @@ public:
                               (debug_flag) && (fprintf(stderr,"DBG 3.1\n"));
                               kernelspmm1_hp(h_rowDelimiters, h_rowDelimiters_noncache, h_cols, h_cols_noncache, h_val, h_val_noncache, h_out, h_out_noncache_trans, h_vec_noncache_trans, numRows, nItems, x_width, file_desc_1, ioctl_flag, debug_flag, begin, end);
                               break;
-                         case 2 : 
+                         case 2 :
                               (debug_flag) && (fprintf(stderr,"DBG 3.2\n"));
                               kernelspmm2_hp(h_rowDelimiters, h_rowDelimiters_noncache, h_cols, h_cols_noncache, h_val, h_val_noncache, h_out, h_out_noncache_trans, h_vec_noncache_trans, numRows, nItems, x_width, file_desc_2, ioctl_flag, debug_flag, begin, end);
                               break;
-                         case 3 : 
-                              (debug_flag) && (fprintf(stderr,"DBG 3.3\n"));              
+                         case 3 :
+                              (debug_flag) && (fprintf(stderr,"DBG 3.3\n"));
                               kernelspmm3_hp(h_rowDelimiters, h_rowDelimiters_noncache, h_cols, h_cols_noncache, h_val, h_val_noncache, h_out, h_out_noncache_trans, h_vec_noncache_trans, numRows, nItems, x_width, file_desc_3, ioctl_flag, debug_flag, begin, end);
                               break;
-                         case 4 : 
-                              (debug_flag) && (fprintf(stderr,"DBG 3.4\n"));             
+                         case 4 :
+                              (debug_flag) && (fprintf(stderr,"DBG 3.4\n"));
                               kernelspmm4_hp(h_rowDelimiters, h_rowDelimiters_noncache, h_cols, h_cols_noncache, h_val, h_val_noncache, h_out, h_out_noncache_trans, h_vec_noncache_trans, numRows, nItems, x_width, file_desc_4, ioctl_flag, debug_flag, begin, end);
                               break;
                     }
@@ -98,7 +98,7 @@ public:
                #ifdef HPC
                     (debug_flag) && (fprintf(stderr,"<HPCACC> ROWS --- begin: %d; end: %d\n",begin,end));
                     switch(id - numhpacc){
-                         case 1 : 
+                         case 1 :
                               (debug_flag) && (fprintf(stderr,"DBG 3.1\n"));
                               (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &start1));
                               kernelspmm1_hpc(h_rowDelimiters, h_cols, h_val, h_out, h_out_trans, h_vec_trans, numRows, nItems, x_width, file_desc_1, ioctl_flag, debug_flag, begin, end);
@@ -109,30 +109,30 @@ public:
                               break;
                          case 2 :
                               (debug_flag) && (fprintf(stderr,"DBG 3.2\n"));
-                              (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &start2));                              
+                              (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &start2));
                               kernelspmm2_hpc(h_rowDelimiters, h_cols, h_val, h_out, h_out_trans, h_vec_trans, numRows, nItems, x_width, file_desc_2, ioctl_flag, debug_flag, begin, end);
                               (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &finish2));
                               (debug_flag) && (elapsed2 = (finish2.tv_sec - start2.tv_sec));
                               (debug_flag) && (elapsed2 += ((finish2.tv_nsec - start2.tv_nsec) / 1000000000.0));
-                              (debug_flag) && (fprintf(stderr,"DBG 3.2.TIMING; start -> %lf s; elapsed -> %lf\n",start2.tv_sec+start2.tv_nsec/1000000000.0,elapsed2));                              
+                              (debug_flag) && (fprintf(stderr,"DBG 3.2.TIMING; start -> %lf s; elapsed -> %lf\n",start2.tv_sec+start2.tv_nsec/1000000000.0,elapsed2));
                               break;
                          case 3 :
                               (debug_flag) && (fprintf(stderr,"DBG 3.3\n"));
-                              (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &start3));                                
+                              (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &start3));
                               kernelspmm3_hpc(h_rowDelimiters, h_cols, h_val, h_out, h_out_trans, h_vec_trans, numRows, nItems, x_width, file_desc_3, ioctl_flag, debug_flag, begin, end);
                               (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &finish3));
                               (debug_flag) && (elapsed3 = (finish3.tv_sec - start3.tv_sec));
                               (debug_flag) && (elapsed3 += ((finish3.tv_nsec - start3.tv_nsec) / 1000000000.0));
-                              (debug_flag) && (fprintf(stderr,"DBG 3.3.TIMING; start -> %lf s; elapsed -> %lf\n",start3.tv_sec+start3.tv_nsec/1000000000.0,elapsed3));                              
+                              (debug_flag) && (fprintf(stderr,"DBG 3.3.TIMING; start -> %lf s; elapsed -> %lf\n",start3.tv_sec+start3.tv_nsec/1000000000.0,elapsed3));
                               break;
-                         case 4 : 
+                         case 4 :
                               (debug_flag) && (fprintf(stderr,"DBG 3.4\n"));
-                              (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &start4));                                
+                              (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &start4));
                               kernelspmm4_hpc(h_rowDelimiters, h_cols, h_val, h_out, h_out_trans, h_vec_trans, numRows, nItems, x_width, file_desc_4, ioctl_flag, debug_flag, begin, end);
                               (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &finish4));
                               (debug_flag) && (elapsed4 = (finish4.tv_sec - start4.tv_sec));
                               (debug_flag) && (elapsed4 += ((finish4.tv_nsec - start4.tv_nsec) / 1000000000.0));
-                              (debug_flag) && (fprintf(stderr,"DBG 3.4.TIMING; start -> %lf s; elapsed -> %lf\n",start4.tv_sec+start4.tv_nsec/1000000000.0,elapsed4));                              
+                              (debug_flag) && (fprintf(stderr,"DBG 3.4.TIMING; start -> %lf s; elapsed -> %lf\n",start4.tv_sec+start4.tv_nsec/1000000000.0,elapsed4));
                               break;
                     }
                #endif
@@ -145,7 +145,11 @@ public:
           struct timespec start, finish;
           double elapsed;
           (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &start));
+#ifdef ARMPL_MULT
+          spmvCpuARMPL(h_val, h_cols, h_rowDelimiters, h_vec_trans, h_out, numRows, begin, end);
+#else
           spmvCpu/*_vilches*/(h_val, h_cols, h_rowDelimiters, h_vec, h_out, numRows, begin, end);
+#endif // ARMPL_MULT
           (debug_flag) && (clock_gettime(CLOCK_MONOTONIC, &finish));
           (debug_flag) && (elapsed = (finish.tv_sec - start.tv_sec));
           (debug_flag) && (elapsed += ((finish.tv_nsec - start.tv_nsec) / 1000000000.0));
@@ -153,9 +157,9 @@ public:
           //spmvCpu_fpgacode(h_val, h_cols, h_rowDelimiters, h_vec, h_out, numRows, begin, end);
           // //if dual mem, then make the two memory blocks coherent if needed
           // #ifdef NONCACHE
-               // for(int xw = 0; xw < x_width; xw++) {     
-                    // for (int i=begin; i<end; i++) {   
-                        // *(h_out_noncache+i+xw*x_width) = *(h_out+i+xw*x_width); 
+               // for(int xw = 0; xw < x_width; xw++) {
+                    // for (int i=begin; i<end; i++) {
+                        // *(h_out_noncache+i+xw*x_width) = *(h_out+i+xw*x_width);
                     // }
                // }
           // #endif
